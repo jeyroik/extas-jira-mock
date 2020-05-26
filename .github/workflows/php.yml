@@ -43,7 +43,7 @@ jobs:
       run: php -S 0.0.0.0:8080 -t src/web > server.log 2>&1 &
 
     - name: Try server
-      run: curl 0.0.0.0:8080//rest/api/2/issue
+      run: curl 0.0.0.0:8080/rest/api/2/issue
 
     - name: Extas install
       run: vendor/bin/extas i
