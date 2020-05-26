@@ -12,7 +12,8 @@
     "jeyroik/extas-snuffbox": "0.*",
     "phpstan/phpstan": "0.*",
     "symfony/process": "5.*",
-    "guzzlehttp/guzzle": "6.*"
+    "guzzlehttp/guzzle": "6.*",
+    "vlucas/phpdotenv": "^3.4"
   },
   "autoload": {
     "psr-4": {
