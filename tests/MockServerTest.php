@@ -59,7 +59,7 @@ class MockServerTest extends TestCase
         $client = new Client(['http_errors' => false]);
 
         $response = $client->request("GET", "http://0.0.0.0:8080/test");
-        $this->assertEquals('{"test":"is ok"}', (string) $response->getBody(), 'Response mismatched');
+        $this->assertEquals('{"test": "is ok"}', (string) $response->getBody(), 'Response mismatched');
     }
 
     public function testRouteLogJsonRequest()
