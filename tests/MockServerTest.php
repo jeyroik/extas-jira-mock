@@ -51,7 +51,7 @@ class MockServerTest extends TestCase
             JiraRoute::FIELD__PARAMETERS => [
                 RoutePrepared::PARAM__PATH => [
                     ISampleParameter::FIELD__NAME => RoutePrepared::PARAM__PATH,
-                    ISampleParameter::FIELD__VALUE => '/prepared.json'
+                    ISampleParameter::FIELD__VALUE => '/tests/prepared.json'
                 ]
             ]
         ]));
