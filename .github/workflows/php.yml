@@ -40,7 +40,7 @@ jobs:
       env:
         EXTAS__JIRA_MOCK__HOST: test
         EXTAS__JIRA_MOCK__BASE_PATH: $PWD/tests
-      run: php -S 0.0.0.0:8080 -t src/web
+      run: php -S 0.0.0.0:8080 -t src/web > /dev/null 2>&1 &
 
     - name: Run test suites
       run: composer run-script test
