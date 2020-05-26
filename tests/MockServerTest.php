@@ -5,13 +5,12 @@ use Dotenv\Dotenv;
 use extas\components\extensions\TSnuffExtensions;
 use extas\components\jira\JiraRoute;
 use extas\components\jira\JiraRouteRepository;
+use extas\components\jira\MockServer;
 use extas\components\jira\routes\RouteLogJsonRequest;
 use extas\components\jira\routes\RoutePrepared;
 use extas\interfaces\repositories\IRepository;
 use extas\interfaces\samples\parameters\ISampleParameter;
-use GuzzleHttp\Client;
 use PHPUnit\Framework\TestCase;
-use Symfony\Component\Process\Process;
 
 /**
  * Class MockServerTest
@@ -56,10 +55,19 @@ class MockServerTest extends TestCase
             ]
         ]));
 
-        $client = new Client(['http_errors' => false]);
+        $server = new MockServer([
+            MockServer::FIELD__HOST => 'test',
+            MockServer::FIELD__BASE_PATH => getcwd() . '/tests'
+        ]);
 
-        $response = $client->request("GET", "http://0.0.0.0:8080/test");
-        $this->assertEquals('{"test": "is ok"}', (string) $response->getBody(), 'Response mismatched');
+        $_REQUEST['REQUEST_URI'] = 'http://localhost/test';
+
+        ob_start();
+        $server->run();
+        $response = ob_get_contents();
+        ob_end_flush();
+
+        $this->assertEquals('{"test": "is ok"}', $response, 'Response mismatched');
     }
 
     public function testRouteLogJsonRequest()
@@ -75,13 +83,15 @@ class MockServerTest extends TestCase
             ]
         ]));
 
-        $client = new Client(['http_errors' => false]);
-
-        $client->request("POST", "http://0.0.0.0:8080/test", [
-            'json' => [
-                'test' => 'is ok'
-            ]
+        $server = new MockServer([
+            MockServer::FIELD__HOST => 'test',
+            MockServer::FIELD__BASE_PATH => getcwd() . '/tests'
         ]);
+
+        $_REQUEST['REQUEST_URI'] = 'http://localhost/test';
+
+        $server->run();
+
         $this->assertTrue(file_exists(getcwd() . '/tests/log.test.json'), 'Missed log file');
         $this->assertTrue(
             (bool) strpos(file_get_contents(getcwd() . '/tests/log.test.json'), '{"test":"is ok"}'),
