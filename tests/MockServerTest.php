@@ -59,7 +59,7 @@ class MockServerTest extends TestCase
         $client = new Client(['http_errors' => false]);
 
         $response = $client->request("GET", "http://0.0.0.0:8080/test");
-        $this->assertEquals('{"test":"is ok"}', $response->getStatusCode(), 'Response mismatched');
+        $this->assertEquals('{"test":"is ok"}', (string) $response->getBody(), 'Response mismatched');
     }
 
     public function testRouteLogJsonRequest()
@@ -82,11 +82,11 @@ class MockServerTest extends TestCase
                 'test' => 'is ok'
             ]
         ]);
-        $this->assertTrue(file_exists(getcwd() . '/logs/test.json'), 'Missed log file');
-        $this->assertEquals(
-            '{"test":"is ok"}',
-            file_get_contents(getcwd() . '/log.test.json'),
+        $this->assertTrue(file_exists(getcwd() . '/log.test.json'), 'Missed log file');
+        $this->assertTrue(
+            (bool) strpos(file_get_contents(getcwd() . '/log.test.json'), '{"test":"is ok"}'),
             'Log contents mismatched'
         );
+        unlink(getcwd() . '/log.test.json');
     }
 }
