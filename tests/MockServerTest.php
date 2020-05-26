@@ -56,11 +56,11 @@ class MockServerTest extends TestCase
             ]
         ]));
 
-        putenv('EXTAS__JIRA_MOCK__HOST=test');
-        putenv('EXTAS__JIRA_MOCK__BASE_PATH=' . getcwd() . '/tests');
-
-        $process = new Process('php -S localhost:8080 -t ' . getcwd() . '/src/web');
-        $process->start();
+        $process = new Process(['php','-S','localhost:8080','-t', getcwd() . '/src/web']);
+        $process->start(null, [
+            'EXTAS__JIRA_MOCK__HOST' => 'test',
+            'EXTAS__JIRA_MOCK__BASE_PATH' => getcwd() . '/tests'
+        ]);
 
         $client = new Client(['http_errors' => false]);
 
@@ -83,10 +83,10 @@ class MockServerTest extends TestCase
             ]
         ]));
 
-        putenv('EXTAS__JIRA_MOCK__HOST=test');
-
-        $process = new Process('php -S localhost:8080 -t ' . getcwd() . '/src/web');
-        $process->start();
+        $process = new Process(['php','-S','localhost:8080','-t', getcwd() . '/src/web']);
+        $process->start(null, [
+            'EXTAS__JIRA_MOCK__HOST' => 'test'
+        ]);
 
         $client = new Client(['http_errors' => false]);
 
