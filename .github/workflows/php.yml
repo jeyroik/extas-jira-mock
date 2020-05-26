@@ -36,6 +36,12 @@ jobs:
     - name: Install mongodb php-extension
       run: sudo apt install php7.4-mongodb
 
+    - name: Run php server
+      env:
+        EXTAS__JIRA_MOCK__HOST: test
+        EXTAS__JIRA_MOCK__BASE_PATH: $PWD/tests
+      run: php -S 0.0.0.0:8080 -t src/web
+
     - name: Run test suites
       run: composer run-script test
 

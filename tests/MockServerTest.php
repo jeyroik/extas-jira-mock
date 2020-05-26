@@ -56,20 +56,10 @@ class MockServerTest extends TestCase
             ]
         ]));
 
-        $process = new Process(['php','-S','localhost:8080','-t', getcwd() . '/src/web']);
-        $process->start(null, [
-            'EXTAS__JIRA_MOCK__HOST' => 'test',
-            'EXTAS__JIRA_MOCK__BASE_PATH' => getcwd() . '/tests'
-        ]);
-
-        usleep(10000);
-
         $client = new Client(['http_errors' => false]);
 
         $response = $client->request("GET", "http://localhost:8080/test");
         $this->assertEquals('{"test":"is ok"}', $response->getStatusCode(), 'Response mismatched');
-
-        $process->stop();
     }
 
     public function testRouteLogJsonRequest()
@@ -80,21 +70,14 @@ class MockServerTest extends TestCase
             JiraRoute::FIELD__PARAMETERS => [
                 RouteLogJsonRequest::PARAM__PATH => [
                     ISampleParameter::FIELD__NAME => RouteLogJsonRequest::PARAM__PATH,
-                    ISampleParameter::FIELD__VALUE => '/logs/test.json'
+                    ISampleParameter::FIELD__VALUE => '/log.test.json'
                 ]
             ]
         ]));
 
-        $process = new Process(['php','-S','localhost:8080','-t', getcwd() . '/src/web']);
-        $process->start(null, [
-            'EXTAS__JIRA_MOCK__HOST' => 'test'
-        ]);
-
-        usleep(10000);
-
         $client = new Client(['http_errors' => false]);
 
-        $client->request("POST", "http://localhost:8080/test", [
+        $client->request("POST", "http://0.0.0.0:8080/test", [
             'json' => [
                 'test' => 'is ok'
             ]
@@ -102,10 +85,8 @@ class MockServerTest extends TestCase
         $this->assertTrue(file_exists(getcwd() . '/logs/test.json'), 'Missed log file');
         $this->assertEquals(
             '{"test":"is ok"}',
-            file_get_contents(getcwd() . '/logs/test.json'),
+            file_get_contents(getcwd() . '/log.test.json'),
             'Log contents mismatched'
         );
-
-        $process->stop();
     }
 }
