@@ -51,7 +51,7 @@ class MockServerTest extends TestCase
             JiraRoute::FIELD__PARAMETERS => [
                 RoutePrepared::PARAM__PATH => [
                     ISampleParameter::FIELD__NAME => RoutePrepared::PARAM__PATH,
-                    ISampleParameter::FIELD__VALUE => '/tests/prepared.json'
+                    ISampleParameter::FIELD__VALUE => '/prepared.json'
                 ]
             ]
         ]));
@@ -82,11 +82,11 @@ class MockServerTest extends TestCase
                 'test' => 'is ok'
             ]
         ]);
-        $this->assertTrue(file_exists(getcwd() . '/log.test.json'), 'Missed log file');
+        $this->assertTrue(file_exists(getcwd() . '/tests/log.test.json'), 'Missed log file');
         $this->assertTrue(
-            (bool) strpos(file_get_contents(getcwd() . '/log.test.json'), '{"test":"is ok"}'),
+            (bool) strpos(file_get_contents(getcwd() . '/tests/log.test.json'), '{"test":"is ok"}'),
             'Log contents mismatched'
         );
-        unlink(getcwd() . '/log.test.json');
+        unlink(getcwd() . '/tests/log.test.json');
     }
 }
