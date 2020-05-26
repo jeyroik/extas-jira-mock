@@ -62,10 +62,12 @@ class MockServerTest extends TestCase
             'EXTAS__JIRA_MOCK__BASE_PATH' => getcwd() . '/tests'
         ]);
 
+        usleep(10000);
+
         $client = new Client(['http_errors' => false]);
 
         $response = $client->request("GET", "http://localhost:8080/test");
-        $this->assertEquals('{"test":"is ok"}', $response->getStatusCode());
+        $this->assertEquals('{"test":"is ok"}', $response->getStatusCode(), 'Response mismatched');
 
         $process->stop();
     }
@@ -88,6 +90,8 @@ class MockServerTest extends TestCase
             'EXTAS__JIRA_MOCK__HOST' => 'test'
         ]);
 
+        usleep(10000);
+
         $client = new Client(['http_errors' => false]);
 
         $client->request("POST", "http://localhost:8080/test", [
@@ -95,8 +99,12 @@ class MockServerTest extends TestCase
                 'test' => 'is ok'
             ]
         ]);
-        $this->assertTrue(file_exists(getcwd() . '/logs/test.json'));
-        $this->assertEquals('{"test":"is ok"}', file_get_contents(getcwd() . '/logs/test.json'));
+        $this->assertTrue(file_exists(getcwd() . '/logs/test.json'), 'Missed log file');
+        $this->assertEquals(
+            '{"test":"is ok"}',
+            file_get_contents(getcwd() . '/logs/test.json'),
+            'Log contents mismatched'
+        );
 
         $process->stop();
     }
