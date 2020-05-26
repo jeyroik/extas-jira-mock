@@ -1,0 +1,9 @@
+{
+  "id": 37,
+  "self": "@host/rest/agile/1.0/sprint/23",
+  "state": "future",
+  "name": "sprint 1",
+  "startDate": "2025-04-11T15:22:00.000+10:00",
+  "endDate": "2025-04-20T01:22:00.000+10:00",
+  "originBoardId": 5
+}

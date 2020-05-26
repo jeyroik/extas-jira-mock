@@ -1,0 +1,3687 @@
+{
+  "expand": "names,schema",
+  "startAt": 0,
+  "maxResults": 50,
+  "total": 1,
+  "issues": [
+    {
+      "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+      "id": "65125",
+      "self": "@host/rest/api/2/issue/65125",
+      "key": "N3-206",
+      "fields": {
+        "fixVersions": [{
+          "self": "@host/rest/api/2/version/13331",
+          "id": "13331",
+          "description": "",
+          "name": "2019.11.28",
+          "archived": false,
+          "released": true,
+          "releaseDate": "2019-11-30"
+        }],
+        "customfield_11200": null,
+        "customfield_10111": null,
+        "customfield_10112": null,
+        "resolution": {
+          "self": "@host/rest/api/2/resolution/10000",
+          "id": "10000",
+          "description": "Work has been completed on this issue.",
+          "name": "Done"
+        },
+        "customfield_11201": {
+          "self": "@host/rest/api/2/customFieldOption/10502",
+          "value": "S3 Major",
+          "id": "10502"
+        },
+        "customfield_10104": {
+          "self": "@host/rest/api/2/customFieldOption/10100",
+          "value": "M",
+          "id": "10100"
+        },
+        "customfield_11711": null,
+        "customfield_12404": null,
+        "customfield_10105": null,
+        "customfield_12403": null,
+        "customfield_10106": null,
+        "customfield_12804": null,
+        "customfield_10109": null,
+        "customfield_12803": null,
+        "customfield_11716": null,
+        "lastViewed": "2019-04-22T18:18:27.998+0300",
+        "customfield_12000": null,
+        "customfield_12002": null,
+        "customfield_12001": null,
+        "priority": {
+          "self": "@host/rest/api/2/priority/4",
+          "iconUrl": "@host/images/icons/priorities/low.svg",
+          "name": "Low",
+          "id": "4"
+        },
+        "customfield_12004": null,
+        "customfield_10101": null,
+        "customfield_12003": null,
+        "customfield_10102": null,
+        "customfield_12402": null,
+        "customfield_12006": null,
+        "customfield_10103": null,
+        "labels": ["label4", "label5"],
+        "customfield_11700": null,
+        "timeestimate": 0,
+        "aggregatetimeoriginalestimate": null,
+        "versions": [],
+        "customfield_11703": null,
+        "customfield_11707": null,
+        "issuelinks": [{
+          "id": "36224",
+          "self": "@host/rest/api/2/issueLink/36224",
+          "type": {
+            "id": "10000",
+            "name": "Blocks",
+            "inward": "is blocked by",
+            "outward": "blocks",
+            "self": "@host/rest/api/2/issueLinkType/10000"
+          },
+          "outwardIssue": {
+            "id": "27422",
+            "key": "N2-1206",
+            "self": "@host/rest/api/2/issue/27422",
+            "fields": {
+              "summary": "Do something linked",
+              "status": {
+                "self": "@host/rest/api/2/status/10001",
+                "description": "",
+                "iconUrl": "@host/images/icons/statuses/closed.png",
+                "name": "Ready",
+                "id": "10001",
+                "statusCategory": {
+                  "self": "@host/rest/api/2/statuscategory/3",
+                  "id": 3,
+                  "key": "done",
+                  "colorName": "green",
+                  "name": "Done"
+                }
+              },
+              "priority": {
+                "self": "@host/rest/api/2/priority/2",
+                "iconUrl": "@host/images/icons/priorities/high.svg",
+                "name": "High",
+                "id": "2"
+              },
+              "issuetype": {
+                "self": "@host/rest/api/2/issuetype/1",
+                "id": "1",
+                "description": "A problem which impairs or prevents the functions of the product.",
+                "iconUrl": "@host/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                "name": "Bug",
+                "subtask": false,
+                "avatarId": 10303
+              }
+            }
+          }
+        }, {
+          "id": "36226",
+          "self": "@host/rest/api/2/issueLink/36226",
+          "type": {
+            "id": "10003",
+            "name": "Relates",
+            "inward": "relates to",
+            "outward": "relates to",
+            "self": "@host/rest/api/2/issueLinkType/10003"
+          },
+          "inwardIssue": {
+            "id": "27422",
+            "key": "N2-1206",
+            "self": "@host/rest/api/2/issue/27422",
+            "fields": {
+              "summary": "Do something linked",
+              "status": {
+                "self": "@host/rest/api/2/status/10001",
+                "description": "",
+                "iconUrl": "@host/images/icons/statuses/closed.png",
+                "name": "Ready",
+                "id": "10001",
+                "statusCategory": {
+                  "self": "@host/rest/api/2/statuscategory/3",
+                  "id": 3,
+                  "key": "done",
+                  "colorName": "green",
+                  "name": "Done"
+                }
+              },
+              "priority": {
+                "self": "@host/rest/api/2/priority/2",
+                "iconUrl": "@host/images/icons/priorities/high.svg",
+                "name": "High",
+                "id": "2"
+              },
+              "issuetype": {
+                "self": "@host/rest/api/2/issuetype/1",
+                "id": "1",
+                "description": "A problem which impairs or prevents the functions of the product.",
+                "iconUrl": "@host/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                "name": "Bug",
+                "subtask": false,
+                "avatarId": 10303
+              }
+            }
+          }
+        }, {
+          "id": "36223",
+          "self": "@host/rest/api/2/issueLink/36223",
+          "type": {
+            "id": "10003",
+            "name": "Relates",
+            "inward": "relates to",
+            "outward": "relates to",
+            "self": "@host/rest/api/2/issueLinkType/10003"
+          },
+          "inwardIssue": {
+            "id": "63856",
+            "key": "N3-204",
+            "self": "@host/rest/api/2/issue/63856",
+            "fields": {
+              "summary": "Do something 04",
+              "status": {
+                "self": "@host/rest/api/2/status/10001",
+                "description": "",
+                "iconUrl": "@host/images/icons/statuses/closed.png",
+                "name": "Ready",
+                "id": "10001",
+                "statusCategory": {
+                  "self": "@host/rest/api/2/statuscategory/3",
+                  "id": 3,
+                  "key": "done",
+                  "colorName": "green",
+                  "name": "Done"
+                }
+              },
+              "priority": {
+                "self": "@host/rest/api/2/priority/3",
+                "iconUrl": "@host/images/icons/priorities/medium.svg",
+                "name": "Medium",
+                "id": "3"
+              },
+              "issuetype": {
+                "self": "@host/rest/api/2/issuetype/3",
+                "id": "3",
+                "description": "A task that needs to be done.",
+                "iconUrl": "@host/secure/viewavatar?size=xsmall&avatarId=10318&avatarType=issuetype",
+                "name": "Task",
+                "subtask": false,
+                "avatarId": 10318
+              }
+            }
+          }
+        }],
+        "customfield_11709": null,
+        "assignee": {
+          "self": "@host/rest/api/2/user?username=user1",
+          "name": "user1",
+          "key": "user1",
+          "emailAddress": "user1@domain.org",
+          "avatarUrls": {
+            "48x48": "@host/secure/useravatar?ownerId=user1&avatarId=11301",
+            "24x24": "@host/secure/useravatar?size=small&ownerId=user1&avatarId=11301",
+            "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user1&avatarId=11301",
+            "32x32": "@host/secure/useravatar?size=medium&ownerId=user1&avatarId=11301"
+          },
+          "displayName": "User One",
+          "active": true,
+          "timeZone": "Europe/Moscow"
+        },
+        "status": {
+          "self": "@host/rest/api/2/status/11114",
+          "description": "",
+          "iconUrl": "@host/images/icons/statuses/generic.png",
+          "name": "Not actual",
+          "id": "11114",
+          "statusCategory": {
+            "self": "@host/rest/api/2/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Done"
+          }
+        },
+        "components": [],
+        "customfield_11300": null,
+        "customfield_11810": null,
+        "customfield_12901": null,
+        "customfield_11811": null,
+        "customfield_12900": null,
+        "aggregatetimeestimate": 0,
+        "customfield_12902": {
+          "self": "@host/rest/api/2/customFieldOption/12102",
+          "value": "Да",
+          "id": "12102"
+        },
+        "customfield_10605": null,
+        "creator": {
+          "self": "@host/rest/api/2/user?username=user1",
+          "name": "user1",
+          "key": "user1",
+          "emailAddress": "user1@domain.org",
+          "avatarUrls": {
+            "48x48": "@host/secure/useravatar?ownerId=user1&avatarId=11301",
+            "24x24": "@host/secure/useravatar?size=small&ownerId=user1&avatarId=11301",
+            "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user1&avatarId=11301",
+            "32x32": "@host/secure/useravatar?size=medium&ownerId=user1&avatarId=11301"
+          },
+          "displayName": "User One",
+          "active": true,
+          "timeZone": "Europe/Moscow"
+        },
+        "subtasks": [],
+        "reporter": {
+          "self": "@host/rest/api/2/user?username=user1",
+          "name": "user1",
+          "key": "user1",
+          "emailAddress": "user1@domain.org",
+          "avatarUrls": {
+            "48x48": "@host/secure/useravatar?ownerId=user1&avatarId=11301",
+            "24x24": "@host/secure/useravatar?size=small&ownerId=user1&avatarId=11301",
+            "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user1&avatarId=11301",
+            "32x32": "@host/secure/useravatar?size=medium&ownerId=user1&avatarId=11301"
+          },
+          "displayName": "User One",
+          "active": true,
+          "timeZone": "Europe/Moscow"
+        },
+        "customfield_12101": null,
+        "customfield_12100": null,
+        "aggregateprogress": {
+          "progress": 126000,
+          "total": 126000,
+          "percent": 100
+        },
+        "customfield_12103": null,
+        "customfield_12102": null,
+        "customfield_10201": null,
+        "customfield_12500": null,
+        "customfield_11801": null,
+        "customfield_11009": "0.0",
+        "customfield_11803": {
+          "self": "@host/rest/api/2/user?username=user2",
+          "name": "user2",
+          "key": "user2",
+          "emailAddress": "user2@domain.org",
+          "avatarUrls": {
+            "48x48": "@host/secure/useravatar?ownerId=user2&avatarId=10644",
+            "24x24": "@host/secure/useravatar?size=small&ownerId=user2&avatarId=10644",
+            "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user2&avatarId=10644",
+            "32x32": "@host/secure/useravatar?size=medium&ownerId=user2&avatarId=10644"
+          },
+          "displayName": "User Two",
+          "active": true,
+          "timeZone": "Europe/Moscow"
+        },
+        "customfield_11802": "3_*:*_3_*:*_880587_*|*_10000_*:*_1_*:*_3139695_*|*_11114_*:*_2_*:*_1026934",
+        "customfield_11804": null,
+        "customfield_11807": null,
+        "progress": {
+          "progress": 126000,
+          "total": 126000,
+          "percent": 100
+        },
+        "customfield_11809": null,
+        "votes": {
+          "self": "@host/rest/api/2/issue/N3-206/votes",
+          "votes": 0,
+          "hasVoted": false
+        },
+        "worklog": {
+          "startAt": 0,
+          "maxResults": 20,
+          "total": 12,
+          "worklogs": [{
+            "self": "@host/rest/api/2/issue/65125/worklog/36544",
+            "author": {
+              "self": "@host/rest/api/2/user?username=user1",
+              "name": "user1",
+              "key": "user1",
+              "emailAddress": "user1@domain.org",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user1&avatarId=11301",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user1&avatarId=11301",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user1&avatarId=11301",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user1&avatarId=11301"
+              },
+              "displayName": "User One",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "updateAuthor": {
+              "self": "@host/rest/api/2/user?username=user1",
+              "name": "user1",
+              "key": "user1",
+              "emailAddress": "user1@domain.org",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user1&avatarId=11301",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user1&avatarId=11301",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user1&avatarId=11301",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user1&avatarId=11301"
+              },
+              "displayName": "User One",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "comment": "",
+            "created": "2019-04-22T16:20:50.812+0300",
+            "updated": "2019-04-22T16:20:50.812+0300",
+            "started": "2019-04-22T16:20:00.000+0300",
+            "timeSpent": "2h",
+            "timeSpentSeconds": 7200,
+            "id": "36544",
+            "issueId": "65125"
+          }, {
+            "self": "@host/rest/api/2/issue/65125/worklog/36545",
+            "author": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "updateAuthor": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "comment": "comm add 1",
+            "created": "2019-04-22T16:21:30.976+0300",
+            "updated": "2019-04-22T16:21:30.976+0300",
+            "started": "2019-04-22T16:21:00.000+0300",
+            "timeSpent": "3h",
+            "timeSpentSeconds": 10800,
+            "id": "36545",
+            "issueId": "65125"
+          }, {
+            "self": "@host/rest/api/2/issue/65125/worklog/36546",
+            "author": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "updateAuthor": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "comment": "wou!",
+            "created": "2019-04-22T16:22:02.058+0300",
+            "updated": "2019-04-22T16:22:02.058+0300",
+            "started": "2019-04-22T16:22:00.000+0300",
+            "timeSpent": "3h",
+            "timeSpentSeconds": 10800,
+            "id": "36546",
+            "issueId": "65125"
+          }, {
+            "self": "@host/rest/api/2/issue/65125/worklog/36548",
+            "author": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "updateAuthor": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "comment": "wou!",
+            "created": "2019-04-22T16:42:14.494+0300",
+            "updated": "2019-04-22T16:42:14.494+0300",
+            "started": "2019-04-22T16:42:00.000+0300",
+            "timeSpent": "3h",
+            "timeSpentSeconds": 10800,
+            "id": "36548",
+            "issueId": "65125"
+          }, {
+            "self": "@host/rest/api/2/issue/65125/worklog/36549",
+            "author": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "updateAuthor": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "comment": "wou!",
+            "created": "2019-04-22T16:43:33.613+0300",
+            "updated": "2019-04-22T16:43:33.613+0300",
+            "started": "2019-04-22T16:43:00.000+0300",
+            "timeSpent": "3h",
+            "timeSpentSeconds": 10800,
+            "id": "36549",
+            "issueId": "65125"
+          }, {
+            "self": "@host/rest/api/2/issue/65125/worklog/36551",
+            "author": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "updateAuthor": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "comment": "wou!",
+            "created": "2019-04-22T17:19:51.140+0300",
+            "updated": "2019-04-22T17:19:51.140+0300",
+            "started": "2019-04-22T17:19:00.000+0300",
+            "timeSpent": "3h",
+            "timeSpentSeconds": 10800,
+            "id": "36551",
+            "issueId": "65125"
+          }, {
+            "self": "@host/rest/api/2/issue/65125/worklog/36552",
+            "author": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "updateAuthor": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "comment": "wou!",
+            "created": "2019-04-22T17:21:05.340+0300",
+            "updated": "2019-04-22T17:21:05.340+0300",
+            "started": "2019-04-22T17:21:00.000+0300",
+            "timeSpent": "3h",
+            "timeSpentSeconds": 10800,
+            "id": "36552",
+            "issueId": "65125"
+          }, {
+            "self": "@host/rest/api/2/issue/65125/worklog/36553",
+            "author": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "updateAuthor": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "comment": "wou!",
+            "created": "2019-04-22T17:25:01.328+0300",
+            "updated": "2019-04-22T17:25:01.328+0300",
+            "started": "2019-04-22T17:25:00.000+0300",
+            "timeSpent": "3h",
+            "timeSpentSeconds": 10800,
+            "id": "36553",
+            "issueId": "65125"
+          }, {
+            "self": "@host/rest/api/2/issue/65125/worklog/36554",
+            "author": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "updateAuthor": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "comment": "wou!",
+            "created": "2019-04-22T17:27:20.649+0300",
+            "updated": "2019-04-22T17:27:20.649+0300",
+            "started": "2019-04-22T17:27:00.000+0300",
+            "timeSpent": "3h",
+            "timeSpentSeconds": 10800,
+            "id": "36554",
+            "issueId": "65125"
+          }, {
+            "self": "@host/rest/api/2/issue/65125/worklog/36555",
+            "author": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "updateAuthor": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "comment": "wou!",
+            "created": "2019-04-22T17:27:40.564+0300",
+            "updated": "2019-04-22T17:27:40.564+0300",
+            "started": "2019-04-22T17:27:00.000+0300",
+            "timeSpent": "3h",
+            "timeSpentSeconds": 10800,
+            "id": "36555",
+            "issueId": "65125"
+          }, {
+            "self": "@host/rest/api/2/issue/65125/worklog/36558",
+            "author": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "updateAuthor": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "comment": "wou!",
+            "created": "2019-04-22T17:56:11.326+0300",
+            "updated": "2019-04-22T17:56:11.326+0300",
+            "started": "2019-04-22T17:56:00.000+0300",
+            "timeSpent": "3h",
+            "timeSpentSeconds": 10800,
+            "id": "36558",
+            "issueId": "65125"
+          }, {
+            "self": "@host/rest/api/2/issue/65125/worklog/36561",
+            "author": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "updateAuthor": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "comment": "wou!",
+            "created": "2019-04-22T17:59:34.040+0300",
+            "updated": "2019-04-22T17:59:34.040+0300",
+            "started": "2019-04-22T17:59:00.000+0300",
+            "timeSpent": "3h",
+            "timeSpentSeconds": 10800,
+            "id": "36561",
+            "issueId": "65125"
+          }]
+        },
+        "customfield_11808": null,
+        "issuetype": {
+          "self": "@host/rest/api/2/issuetype/3",
+          "id": "3",
+          "description": "A task that needs to be done.",
+          "iconUrl": "@host/secure/viewavatar?size=xsmall&avatarId=10318&avatarType=issuetype",
+          "name": "Task",
+          "subtask": false,
+          "avatarId": 10318
+        },
+        "timespent": 126000,
+        "project": {
+          "self": "@host/rest/api/2/project/10114",
+          "id": "10114",
+          "key": "N3",
+          "name": "Project name N3",
+          "avatarUrls": {
+            "48x48": "@host/secure/projectavatar?pid=10114&avatarId=10657",
+            "24x24": "@host/secure/projectavatar?size=small&pid=10114&avatarId=10657",
+            "16x16": "@host/secure/projectavatar?size=xsmall&pid=10114&avatarId=10657",
+            "32x32": "@host/secure/projectavatar?size=medium&pid=10114&avatarId=10657"
+          }
+        },
+        "customfield_11002": null,
+        "aggregatetimespent": 126000,
+        "customfield_11400": null,
+        "customfield_12602": null,
+        "customfield_12604": null,
+        "customfield_12603": null,
+        "customfield_12605": null,
+        "resolutiondate": "2019-04-19T15:10:43.056+0300",
+        "workratio": -1,
+        "watches": {
+          "self": "@host/rest/api/2/issue/N3-206/watchers",
+          "watchCount": 2,
+          "isWatching": true
+        },
+        "created": "2019-04-19T13:46:35.843+0300",
+        "customfield_10140": null,
+        "customfield_10141": null,
+        "customfield_12200": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@5cb0ae0[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@85e8326[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@2b835868[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@5738a98d[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@63aea4ab[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@38e6804[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@32ff2005[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@20998316[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@3684e052[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@46ba60ce[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@d0e8f14[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@61e32c90[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
+        "customfield_10138": null,
+        "customfield_11501": null,
+        "customfield_10139": null,
+        "customfield_11900": null,
+        "customfield_11902": null,
+        "customfield_11901": "3_*:*_3_*:*_880587_*|*_10000_*:*_1_*:*_3139695_*|*_11114_*:*_2_*:*_1026934",
+        "customfield_11904": null,
+        "customfield_11903": null,
+        "updated": "2019-04-22T18:18:27.771+0300",
+        "timeoriginalestimate": null,
+        "description": null,
+        "customfield_11100": null,
+        "customfield_10133": null,
+        "customfield_11101": null,
+        "customfield_10134": null,
+        "customfield_11102": null,
+        "customfield_10135": null,
+        "timetracking": {
+          "remainingEstimate": "0m",
+          "timeSpent": "4d 3h",
+          "remainingEstimateSeconds": 0,
+          "timeSpentSeconds": 126000
+        },
+        "customfield_10136": null,
+        "customfield_10005": null,
+        "customfield_12701": null,
+        "customfield_10006": null,
+        "customfield_12700": [{
+          "self": "@host/rest/api/2/customFieldOption/11900",
+          "value": "Да",
+          "id": "11900"
+        }],
+        "customfield_10007": null,
+        "customfield_12703": null,
+        "customfield_10008": null,
+        "customfield_12702": null,
+        "attachment": [],
+        "customfield_12705": null,
+        "customfield_12704": null,
+        "customfield_12706": null,
+        "summary": "updated status",
+        "customfield_10120": null,
+        "customfield_10000": "1|i02x6u:",
+        "customfield_10001": "N3-124",
+        "customfield_12301": {
+          "self": "@host/rest/api/2/customFieldOption/11302",
+          "value": "Production",
+          "id": "11302"
+        },
+        "customfield_10124": null,
+        "environment": null,
+        "customfield_10119": null,
+        "duedate": null,
+        "comment": {
+          "comments": [{
+            "self": "@host/rest/api/2/issue/65125/comment/112110",
+            "id": "112110",
+            "author": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "body": "Comment added when resolving issue",
+            "updateAuthor": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "created": "2019-04-19T14:15:39.588+0300",
+            "updated": "2019-04-19T14:15:39.588+0300"
+          }, {
+            "self": "@host/rest/api/2/issue/65125/comment/112111",
+            "id": "112111",
+            "author": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "body": "Comment added when resolving issue",
+            "updateAuthor": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "created": "2019-04-19T14:15:43.967+0300",
+            "updated": "2019-04-19T14:15:43.967+0300"
+          }, {
+            "self": "@host/rest/api/2/issue/65125/comment/112112",
+            "id": "112112",
+            "author": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "body": "Comment added when resolving issue",
+            "updateAuthor": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "created": "2019-04-19T14:19:57.234+0300",
+            "updated": "2019-04-19T14:19:57.234+0300"
+          }, {
+            "self": "@host/rest/api/2/issue/65125/comment/112113",
+            "id": "112113",
+            "author": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "body": "Comment added when resolving issue",
+            "updateAuthor": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "created": "2019-04-19T14:21:46.632+0300",
+            "updated": "2019-04-19T14:21:46.632+0300"
+          }, {
+            "self": "@host/rest/api/2/issue/65125/comment/112114",
+            "id": "112114",
+            "author": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "body": "Well it is good idea!",
+            "updateAuthor": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "created": "2019-04-19T14:21:49.026+0300",
+            "updated": "2019-04-19T14:21:49.026+0300"
+          }, {
+            "self": "@host/rest/api/2/issue/65125/comment/112115",
+            "id": "112115",
+            "author": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "body": "Comment added when resolving issue",
+            "updateAuthor": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "created": "2019-04-19T14:26:52.906+0300",
+            "updated": "2019-04-19T14:26:52.906+0300"
+          }, {
+            "self": "@host/rest/api/2/issue/65125/comment/112116",
+            "id": "112116",
+            "author": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "body": "Well it is good idea!",
+            "updateAuthor": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "created": "2019-04-19T14:26:55.362+0300",
+            "updated": "2019-04-19T14:26:55.362+0300"
+          }, {
+            "self": "@host/rest/api/2/issue/65125/comment/112117",
+            "id": "112117",
+            "author": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "body": "Comment added when resolving issue",
+            "updateAuthor": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "created": "2019-04-19T14:27:57.635+0300",
+            "updated": "2019-04-19T14:27:57.635+0300"
+          }, {
+            "self": "@host/rest/api/2/issue/65125/comment/112118",
+            "id": "112118",
+            "author": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "body": "Comment added when resolving issue",
+            "updateAuthor": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "created": "2019-04-19T14:28:25.968+0300",
+            "updated": "2019-04-19T14:28:25.968+0300"
+          }, {
+            "self": "@host/rest/api/2/issue/65125/comment/112119",
+            "id": "112119",
+            "author": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "body": "Comment added when resolving issue",
+            "updateAuthor": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "created": "2019-04-19T14:28:53.097+0300",
+            "updated": "2019-04-19T14:28:53.097+0300"
+          }, {
+            "self": "@host/rest/api/2/issue/65125/comment/112120",
+            "id": "112120",
+            "author": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "body": "Comment added when resolving issue",
+            "updateAuthor": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "created": "2019-04-19T14:31:22.190+0300",
+            "updated": "2019-04-19T14:31:22.190+0300"
+          }, {
+            "self": "@host/rest/api/2/issue/65125/comment/112271",
+            "id": "112271",
+            "author": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "body": "comm add 1",
+            "updateAuthor": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "created": "2019-04-22T16:10:28.323+0300",
+            "updated": "2019-04-22T16:10:28.323+0300"
+          }, {
+            "self": "@host/rest/api/2/issue/65125/comment/112272",
+            "id": "112272",
+            "author": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "body": "comm add 1",
+            "updateAuthor": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "created": "2019-04-22T16:16:28.019+0300",
+            "updated": "2019-04-22T16:16:28.019+0300"
+          }, {
+            "self": "@host/rest/api/2/issue/65125/comment/112273",
+            "id": "112273",
+            "author": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "body": "comm add 1",
+            "updateAuthor": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "created": "2019-04-22T16:16:45.080+0300",
+            "updated": "2019-04-22T16:16:45.080+0300"
+          }, {
+            "self": "@host/rest/api/2/issue/65125/comment/112274",
+            "id": "112274",
+            "author": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "body": "comm add 1",
+            "updateAuthor": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "created": "2019-04-22T16:21:30.976+0300",
+            "updated": "2019-04-22T16:21:30.976+0300"
+          }, {
+            "self": "@host/rest/api/2/issue/65125/comment/112275",
+            "id": "112275",
+            "author": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "body": "comm add 1",
+            "updateAuthor": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "created": "2019-04-22T16:22:02.058+0300",
+            "updated": "2019-04-22T16:22:02.058+0300"
+          }, {
+            "self": "@host/rest/api/2/issue/65125/comment/112282",
+            "id": "112282",
+            "author": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "body": "comm add 1",
+            "updateAuthor": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "created": "2019-04-22T16:42:14.495+0300",
+            "updated": "2019-04-22T16:42:14.495+0300"
+          }, {
+            "self": "@host/rest/api/2/issue/65125/comment/112283",
+            "id": "112283",
+            "author": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "body": "comm add 1",
+            "updateAuthor": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "created": "2019-04-22T16:43:33.613+0300",
+            "updated": "2019-04-22T16:43:33.613+0300"
+          }, {
+            "self": "@host/rest/api/2/issue/65125/comment/112291",
+            "id": "112291",
+            "author": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "body": "comm add 1",
+            "updateAuthor": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "created": "2019-04-22T17:19:51.140+0300",
+            "updated": "2019-04-22T17:19:51.140+0300"
+          }, {
+            "self": "@host/rest/api/2/issue/65125/comment/112292",
+            "id": "112292",
+            "author": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "body": "comm add 1",
+            "updateAuthor": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "created": "2019-04-22T17:21:05.340+0300",
+            "updated": "2019-04-22T17:21:05.340+0300"
+          }, {
+            "self": "@host/rest/api/2/issue/65125/comment/112293",
+            "id": "112293",
+            "author": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "body": "comm add 1",
+            "updateAuthor": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "created": "2019-04-22T17:25:01.328+0300",
+            "updated": "2019-04-22T17:25:01.328+0300"
+          }, {
+            "self": "@host/rest/api/2/issue/65125/comment/112294",
+            "id": "112294",
+            "author": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "body": "comm add 1",
+            "updateAuthor": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "created": "2019-04-22T17:27:20.649+0300",
+            "updated": "2019-04-22T17:27:20.649+0300"
+          }, {
+            "self": "@host/rest/api/2/issue/65125/comment/112295",
+            "id": "112295",
+            "author": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "body": "comm add 1",
+            "updateAuthor": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "created": "2019-04-22T17:27:40.564+0300",
+            "updated": "2019-04-22T17:27:40.564+0300"
+          }, {
+            "self": "@host/rest/api/2/issue/65125/comment/112301",
+            "id": "112301",
+            "author": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "body": "comm add 1",
+            "updateAuthor": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "created": "2019-04-22T17:56:11.327+0300",
+            "updated": "2019-04-22T17:56:11.327+0300"
+          }, {
+            "self": "@host/rest/api/2/issue/65125/comment/112302",
+            "id": "112302",
+            "author": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "body": "comm add 1",
+            "updateAuthor": {
+              "self": "@host/rest/api/2/user?username=user-author",
+              "name": "user-author",
+              "key": "user-author",
+              "emailAddress": "",
+              "avatarUrls": {
+                "48x48": "@host/secure/useravatar?ownerId=user-author&avatarId=12309",
+                "24x24": "@host/secure/useravatar?size=small&ownerId=user-author&avatarId=12309",
+                "16x16": "@host/secure/useravatar?size=xsmall&ownerId=user-author&avatarId=12309",
+                "32x32": "@host/secure/useravatar?size=medium&ownerId=user-author&avatarId=12309"
+              },
+              "displayName": "user-author",
+              "active": true,
+              "timeZone": "Europe/Moscow"
+            },
+            "created": "2019-04-22T17:59:34.041+0300",
+            "updated": "2019-04-22T17:59:34.041+0300"
+          }],
+          "maxResults": 25,
+          "total": 25,
+          "startAt": 0
+        }
+      },
+      "names": {
+        "fixVersions": "Fix Version/s",
+        "customfield_11200": "Cust11200",
+        "customfield_10111": "Cust10111",
+        "customfield_10112": "Cust10112",
+        "resolution": "Resolution",
+        "customfield_11201": "Severity",
+        "customfield_10104": "Cust10104",
+        "customfield_11711": "Cust11711",
+        "customfield_12404": "Cust12404",
+        "customfield_10105": "Cust10105",
+        "customfield_12403": "Cust12403",
+        "customfield_10106": "Cust10106",
+        "customfield_12804": "Cust12804",
+        "customfield_10109": "Cust10109",
+        "customfield_12803": "Cust12803",
+        "customfield_11716": "Confluence link",
+        "lastViewed": "Last Viewed",
+        "customfield_12000": "Cust12000",
+        "customfield_12002": "Cust12002",
+        "customfield_12001": "Cust12001",
+        "priority": "Priority",
+        "customfield_12004": "Email",
+        "customfield_12400": "Cust12400",
+        "customfield_10101": "Cust10101",
+        "customfield_12003": "Cust12003",
+        "customfield_10102": "Cust10102",
+        "customfield_12402": "Cust12402",
+        "customfield_12006": "Cust12006",
+        "customfield_10103": "Cust10103",
+        "labels": "Labels",
+        "customfield_12005": "Cust12005",
+        "customfield_11700": "Cust11700",
+        "timeestimate": "Remaining Estimate",
+        "aggregatetimeoriginalestimate": "Σ Original Estimate",
+        "versions": "Affects Version/s",
+        "customfield_11703": "Cust11703",
+        "customfield_11707": "Cust11707",
+        "issuelinks": "Linked Issues",
+        "customfield_11709": "Cust11709",
+        "assignee": "Assignee",
+        "status": "Status",
+        "components": "Component/s",
+        "customfield_11300": "milestone",
+        "customfield_11810": "Start date",
+        "customfield_12901": "Cust12901",
+        "customfield_11811": "End date",
+        "customfield_12900": "Developer",
+        "aggregatetimeestimate": "Σ Remaining Estimate",
+        "customfield_12902": "Cust12902",
+        "customfield_10605": "Cust10605",
+        "creator": "Creator",
+        "subtasks": "Sub-Tasks",
+        "reporter": "Reporter",
+        "customfield_12101": "Cust12101",
+        "customfield_12100": "Cust12100",
+        "aggregateprogress": "Σ Progress",
+        "customfield_12103": "Cust12103",
+        "customfield_12102": "Cust12102",
+        "customfield_10201": "Cust12101",
+        "customfield_12500": "Cust12500",
+        "customfield_11801": "Checklists",
+        "customfield_11009": "Original Estimate",
+        "customfield_11803": "Cust11803",
+        "customfield_11802": "Time in Status",
+        "customfield_11804": "Cust11804",
+        "customfield_11807": "Baseline start date",
+        "progress": "Progress",
+        "customfield_11809": "Progress",
+        "votes": "Votes",
+        "worklog": "Log Work",
+        "customfield_11808": "Baseline end date",
+        "issuetype": "Issue Type",
+        "timespent": "Time Spent",
+        "project": "Project",
+        "customfield_11002": "Cust11002",
+        "aggregatetimespent": "Σ Time Spent",
+        "customfield_11400": "Reviewers",
+        "customfield_12602": "Cust12602",
+        "customfield_12604": "Cust12604",
+        "customfield_12603": "OID",
+        "customfield_12605": "Cust12605",
+        "resolutiondate": "Resolved",
+        "workratio": "Work Ratio",
+        "watches": "Watchers",
+        "created": "Created",
+        "customfield_10140": "Cust10140",
+        "customfield_10141": "Cust10141",
+        "customfield_12200": "Development",
+        "customfield_10138": "Cust10138",
+        "customfield_11501": "Channel",
+        "customfield_10139": "Cust10139",
+        "customfield_11900": "Cust11900",
+        "customfield_11902": "Cust11902",
+        "customfield_11901": "Cust11901",
+        "customfield_11904": "Cust11804-RC",
+        "customfield_11903": "Cust11903",
+        "updated": "Updated",
+        "timeoriginalestimate": "Original Estimate",
+        "description": "Description",
+        "customfield_11100": "gitBranch",
+        "customfield_10133": "Cust10133",
+        "customfield_11101": "gitCommitsReferenced",
+        "customfield_10134": "Cust10134",
+        "customfield_11102": "Cust11102",
+        "customfield_10135": "Cust10135",
+        "timetracking": "Time Tracking",
+        "customfield_10136": "Cust10136",
+        "customfield_10005": "Sprint",
+        "customfield_12701": "Cust12701",
+        "customfield_10006": "Flagged",
+        "customfield_12700": "Cust12700",
+        "customfield_10007": "Epic/Theme",
+        "customfield_12703": "Cust12703",
+        "customfield_10008": "Story Points",
+        "customfield_12702": "Cust12702",
+        "attachment": "Attachment",
+        "customfield_12705": "Cust12705",
+        "customfield_12704": "Cust12704",
+        "customfield_12706": "Environment",
+        "summary": "Summary",
+        "customfield_10120": "Cust10120",
+        "customfield_10000": "Rank",
+        "customfield_10001": "Epic Link",
+        "customfield_12301": "Environment",
+        "customfield_10124": "Cust10124",
+        "environment": "Environment",
+        "customfield_10119": "Cust10119",
+        "duedate": "Due Date",
+        "comment": "Comment"
+      },
+      "schema": {
+        "fixVersions": {
+          "type": "array",
+          "items": "version",
+          "system": "fixVersions"
+        },
+        "customfield_11200": {
+          "type": "string",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textfield",
+          "customId": 11200
+        },
+        "customfield_10111": {
+          "type": "number",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:float",
+          "customId": 10111
+        },
+        "customfield_10112": {
+          "type": "option",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+          "customId": 10112
+        },
+        "resolution": {
+          "type": "resolution",
+          "system": "resolution"
+        },
+        "customfield_11201": {
+          "type": "option",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+          "customId": 11201
+        },
+        "customfield_10104": {
+          "type": "option",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+          "customId": 10104
+        },
+        "customfield_11711": {
+          "type": "option",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+          "customId": 11711
+        },
+        "customfield_12404": {
+          "type": "array",
+          "items": "option",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:multiselect",
+          "customId": 12404
+        },
+        "customfield_10105": {
+          "type": "number",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:float",
+          "customId": 10105
+        },
+        "customfield_12403": {
+          "type": "array",
+          "items": "option",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:multiselect",
+          "customId": 12403
+        },
+        "customfield_10106": {
+          "type": "string",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textfield",
+          "customId": 10106
+        },
+        "customfield_12804": {
+          "type": "string",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textfield",
+          "customId": 12804
+        },
+        "customfield_10109": {
+          "type": "string",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textfield",
+          "customId": 10109
+        },
+        "customfield_12803": {
+          "type": "number",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:float",
+          "customId": 12803
+        },
+        "customfield_11716": {
+          "type": "string",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:url",
+          "customId": 11716
+        },
+        "lastViewed": {
+          "type": "datetime",
+          "system": "lastViewed"
+        },
+        "customfield_12000": {
+          "type": "user",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:userpicker",
+          "customId": 12000
+        },
+        "customfield_12002": {
+          "type": "string",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textfield",
+          "customId": 12002
+        },
+        "customfield_12001": {
+          "type": "string",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textfield",
+          "customId": 12001
+        },
+        "priority": {
+          "type": "priority",
+          "system": "priority"
+        },
+        "customfield_12004": {
+          "type": "string",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textfield",
+          "customId": 12004
+        },
+        "customfield_12400": {
+          "type": "array",
+          "items": "option",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:multicheckboxes",
+          "customId": 12400
+        },
+        "customfield_10101": {
+          "type": "user",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:userpicker",
+          "customId": 10101
+        },
+        "customfield_12003": {
+          "type": "string",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textfield",
+          "customId": 12003
+        },
+        "customfield_10102": {
+          "type": "user",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:userpicker",
+          "customId": 10102
+        },
+        "customfield_12402": {
+          "type": "array",
+          "items": "option",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:multiselect",
+          "customId": 12402
+        },
+        "customfield_12006": {
+          "type": "user",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:userpicker",
+          "customId": 12006
+        },
+        "customfield_10103": {
+          "type": "user",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:userpicker",
+          "customId": 10103
+        },
+        "labels": {
+          "type": "array",
+          "items": "string",
+          "system": "labels"
+        },
+        "customfield_12005": {
+          "type": "option",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+          "customId": 12005
+        },
+        "customfield_11700": {
+          "type": "number",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:float",
+          "customId": 11700
+        },
+        "timeestimate": {
+          "type": "number",
+          "system": "timeestimate"
+        },
+        "aggregatetimeoriginalestimate": {
+          "type": "number",
+          "system": "aggregatetimeoriginalestimate"
+        },
+        "versions": {
+          "type": "array",
+          "items": "version",
+          "system": "versions"
+        },
+        "customfield_11703": {
+          "type": "string",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textfield",
+          "customId": 11703
+        },
+        "customfield_11707": {
+          "type": "option",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+          "customId": 11707
+        },
+        "issuelinks": {
+          "type": "array",
+          "items": "issuelinks",
+          "system": "issuelinks"
+        },
+        "customfield_11709": {
+          "type": "array",
+          "items": "option",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:multicheckboxes",
+          "customId": 11709
+        },
+        "assignee": {
+          "type": "user",
+          "system": "assignee"
+        },
+        "status": {
+          "type": "status",
+          "system": "status"
+        },
+        "components": {
+          "type": "array",
+          "items": "component",
+          "system": "components"
+        },
+        "customfield_11300": {
+          "type": "array",
+          "items": "string",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:labels",
+          "customId": 11300
+        },
+        "customfield_11810": {
+          "type": "date",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:datepicker",
+          "customId": 11810
+        },
+        "customfield_12901": {
+          "type": "user",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:userpicker",
+          "customId": 12901
+        },
+        "customfield_11811": {
+          "type": "date",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:datepicker",
+          "customId": 11811
+        },
+        "customfield_12900": {
+          "type": "user",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:userpicker",
+          "customId": 12900
+        },
+        "aggregatetimeestimate": {
+          "type": "number",
+          "system": "aggregatetimeestimate"
+        },
+        "customfield_12902": {
+          "type": "option",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:radiobuttons",
+          "customId": 12902
+        },
+        "customfield_10605": {
+          "type": "string",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textfield",
+          "customId": 10605
+        },
+        "creator": {
+          "type": "user",
+          "system": "creator"
+        },
+        "subtasks": {
+          "type": "array",
+          "items": "issuelinks",
+          "system": "subtasks"
+        },
+        "reporter": {
+          "type": "user",
+          "system": "reporter"
+        },
+        "customfield_12101": {
+          "type": "string",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textarea",
+          "customId": 12101
+        },
+        "customfield_12100": {
+          "type": "string",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textarea",
+          "customId": 12100
+        },
+        "aggregateprogress": {
+          "type": "progress",
+          "system": "aggregateprogress"
+        },
+        "customfield_12103": {
+          "type": "array",
+          "items": "option",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:multiselect",
+          "customId": 12103
+        },
+        "customfield_12102": {
+          "type": "string",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textarea",
+          "customId": 12102
+        },
+        "customfield_10201": {
+          "type": "option",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+          "customId": 10201
+        },
+        "customfield_12500": {
+          "type": "user",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:userpicker",
+          "customId": 12500
+        },
+        "customfield_11801": {
+          "type": "string",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textarea",
+          "customId": 11801
+        },
+        "customfield_11009": {
+          "type": "any",
+          "custom": "com.atlassian.jira.toolkit:originalestimate",
+          "customId": 11009
+        },
+        "customfield_11803": {
+          "type": "user",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:userpicker",
+          "customId": 11803
+        },
+        "customfield_11802": {
+          "type": "any",
+          "custom": "com.atlassian.jira.ext.charting:timeinstatus",
+          "customId": 11802
+        },
+        "customfield_11804": {
+          "type": "user",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:userpicker",
+          "customId": 11804
+        },
+        "customfield_11807": {
+          "type": "date",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:datepicker",
+          "customId": 11807
+        },
+        "progress": {
+          "type": "progress",
+          "system": "progress"
+        },
+        "customfield_11809": {
+          "type": "number",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:float",
+          "customId": 11809
+        },
+        "votes": {
+          "type": "votes",
+          "system": "votes"
+        },
+        "worklog": {
+          "type": "array",
+          "items": "worklog",
+          "system": "worklog"
+        },
+        "customfield_11808": {
+          "type": "date",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:datepicker",
+          "customId": 11808
+        },
+        "issuetype": {
+          "type": "issuetype",
+          "system": "issuetype"
+        },
+        "timespent": {
+          "type": "number",
+          "system": "timespent"
+        },
+        "project": {
+          "type": "project",
+          "system": "project"
+        },
+        "customfield_11002": {
+          "type": "string",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textarea",
+          "customId": 11002
+        },
+        "aggregatetimespent": {
+          "type": "number",
+          "system": "aggregatetimespent"
+        },
+        "customfield_11400": {
+          "type": "array",
+          "items": "user",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:multiuserpicker",
+          "customId": 11400
+        },
+        "customfield_12602": {
+          "type": "string",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textfield",
+          "customId": 12602
+        },
+        "customfield_12604": {
+          "type": "string",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textfield",
+          "customId": 12604
+        },
+        "customfield_12603": {
+          "type": "string",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textfield",
+          "customId": 12603
+        },
+        "customfield_12605": {
+          "type": "array",
+          "items": "user",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:multiuserpicker",
+          "customId": 12605
+        },
+        "resolutiondate": {
+          "type": "datetime",
+          "system": "resolutiondate"
+        },
+        "workratio": {
+          "type": "number",
+          "system": "workratio"
+        },
+        "watches": {
+          "type": "watches",
+          "system": "watches"
+        },
+        "created": {
+          "type": "datetime",
+          "system": "created"
+        },
+        "customfield_10140": {
+          "type": "datetime",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:datetime",
+          "customId": 10140
+        },
+        "customfield_10141": {
+          "type": "datetime",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:datetime",
+          "customId": 10141
+        },
+        "customfield_12200": {
+          "type": "any",
+          "custom": "com.atlassian.jira.plugins.jira-development-integration-plugin:devsummary",
+          "customId": 12200
+        },
+        "customfield_10138": {
+          "type": "datetime",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:datetime",
+          "customId": 10138
+        },
+        "customfield_11501": {
+          "type": "option",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+          "customId": 11501
+        },
+        "customfield_10139": {
+          "type": "datetime",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:datetime",
+          "customId": 10139
+        },
+        "customfield_11900": {
+          "type": "string",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textfield",
+          "customId": 11900
+        },
+        "customfield_11902": {
+          "type": "option",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+          "customId": 11902
+        },
+        "customfield_11901": {
+          "type": "any",
+          "custom": "com.atlassian.jira.ext.charting:timeinstatus",
+          "customId": 11901
+        },
+        "customfield_11904": {
+          "type": "user",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:userpicker",
+          "customId": 11904
+        },
+        "customfield_11903": {
+          "type": "option",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+          "customId": 11903
+        },
+        "updated": {
+          "type": "datetime",
+          "system": "updated"
+        },
+        "timeoriginalestimate": {
+          "type": "number",
+          "system": "timeoriginalestimate"
+        },
+        "description": {
+          "type": "string",
+          "system": "description"
+        },
+        "customfield_11100": {
+          "type": "any",
+          "custom": "com.xiplink.jira.git.jira_git_plugin:gitbranches",
+          "customId": 11100
+        },
+        "customfield_10133": {
+          "type": "string",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textarea",
+          "customId": 10133
+        },
+        "customfield_11101": {
+          "type": "any",
+          "custom": "com.xiplink.jira.git.jira_git_plugin:gitcommitsreferenced",
+          "customId": 11101
+        },
+        "customfield_10134": {
+          "type": "string",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textarea",
+          "customId": 10134
+        },
+        "customfield_11102": {
+          "type": "number",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:float",
+          "customId": 11102
+        },
+        "customfield_10135": {
+          "type": "array",
+          "items": "option",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:multicheckboxes",
+          "customId": 10135
+        },
+        "timetracking": {
+          "type": "timetracking",
+          "system": "timetracking"
+        },
+        "customfield_10136": {
+          "type": "string",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textarea",
+          "customId": 10136
+        },
+        "customfield_10005": {
+          "type": "array",
+          "items": "string",
+          "custom": "com.pyxis.greenhopper.jira:gh-sprint",
+          "customId": 10005
+        },
+        "customfield_12701": {
+          "type": "option",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+          "customId": 12701
+        },
+        "customfield_10006": {
+          "type": "array",
+          "items": "option",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:multicheckboxes",
+          "customId": 10006
+        },
+        "customfield_12700": {
+          "type": "array",
+          "items": "option",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:multicheckboxes",
+          "customId": 12700
+        },
+        "customfield_10007": {
+          "type": "array",
+          "items": "string",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:labels",
+          "customId": 10007
+        },
+        "customfield_12703": {
+          "type": "number",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:float",
+          "customId": 12703
+        },
+        "customfield_10008": {
+          "type": "number",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:float",
+          "customId": 10008
+        },
+        "customfield_12702": {
+          "type": "string",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textfield",
+          "customId": 12702
+        },
+        "attachment": {
+          "type": "array",
+          "items": "attachment",
+          "system": "attachment"
+        },
+        "customfield_12705": {
+          "type": "string",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textfield",
+          "customId": 12705
+        },
+        "customfield_12704": {
+          "type": "string",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textfield",
+          "customId": 12704
+        },
+        "customfield_12706": {
+          "type": "array",
+          "items": "option",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:multiselect",
+          "customId": 12706
+        },
+        "summary": {
+          "type": "string",
+          "system": "summary"
+        },
+        "customfield_10120": {
+          "type": "string",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textarea",
+          "customId": 10120
+        },
+        "customfield_10000": {
+          "type": "any",
+          "custom": "com.pyxis.greenhopper.jira:gh-lexo-rank",
+          "customId": 10000
+        },
+        "customfield_10001": {
+          "type": "any",
+          "custom": "com.pyxis.greenhopper.jira:gh-epic-link",
+          "customId": 10001
+        },
+        "customfield_12301": {
+          "type": "option",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+          "customId": 12301
+        },
+        "customfield_10124": {
+          "type": "option",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+          "customId": 10124
+        },
+        "environment": {
+          "type": "string",
+          "system": "environment"
+        },
+        "customfield_10119": {
+          "type": "datetime",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:datetime",
+          "customId": 10119
+        },
+        "duedate": {
+          "type": "date",
+          "system": "duedate"
+        },
+        "comment": {
+          "type": "comments-page",
+          "system": "comment"
+        }
+      },
+      "editmeta": {
+        "fields": {
+          "summary": {
+            "required": true,
+            "schema": {
+              "type": "string",
+              "system": "summary"
+            },
+            "name": "Summary",
+            "operations": ["set"]
+          },
+          "issuetype": {
+            "required": true,
+            "schema": {
+              "type": "issuetype",
+              "system": "issuetype"
+            },
+            "name": "Issue Type",
+            "operations": [],
+            "allowedValues": [{
+              "self": "@host/rest/api/2/issuetype/3",
+              "id": "3",
+              "description": "A task that needs to be done.",
+              "iconUrl": "@host/secure/viewavatar?size=xsmall&avatarId=10318&avatarType=issuetype",
+              "name": "Task",
+              "subtask": false,
+              "avatarId": 10318
+            }, {
+              "self": "@host/rest/api/2/issuetype/10001",
+              "id": "10001",
+              "description": "Created by Jira Software - do not edit or delete. Issue type for a user story.",
+              "iconUrl": "@host/secure/viewavatar?size=xsmall&avatarId=10306&avatarType=issuetype",
+              "name": "Story",
+              "subtask": false,
+              "avatarId": 10306
+            }, {
+              "self": "@host/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "A problem which impairs or prevents the functions of the product.",
+              "iconUrl": "@host/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "Bug",
+              "subtask": false,
+              "avatarId": 10303
+            }, {
+              "self": "@host/rest/api/2/issuetype/10000",
+              "id": "10000",
+              "description": "Created by Jira Software - do not edit or delete. Issue type for a big user story that needs to be broken down.",
+              "iconUrl": "@host/secure/viewavatar?size=xsmall&avatarId=10307&avatarType=issuetype",
+              "name": "Epic",
+              "subtask": false,
+              "avatarId": 10307
+            }, {
+              "self": "@host/rest/api/2/issuetype/10400",
+              "id": "10400",
+              "description": "",
+              "iconUrl": "@host/secure/viewavatar?size=xsmall&avatarId=10300&avatarType=issuetype",
+              "name": "Research",
+              "subtask": false,
+              "avatarId": 10300
+            }, {
+              "self": "@host/rest/api/2/issuetype/10100",
+              "id": "10100",
+              "description": "Документация, описание бизнес-процессов, схем, инструкции",
+              "iconUrl": "@host/secure/viewavatar?size=xsmall&avatarId=10315&avatarType=issuetype",
+              "name": "Documentation",
+              "subtask": false,
+              "avatarId": 10315
+            }, {
+              "self": "@host/rest/api/2/issuetype/10201",
+              "id": "10201",
+              "description": "Settings",
+              "iconUrl": "@host/secure/viewavatar?size=xsmall&avatarId=10900&avatarType=issuetype",
+              "name": "Settings",
+              "subtask": false,
+              "avatarId": 10900
+            }, {
+              "self": "@host/rest/api/2/issuetype/10308",
+              "id": "10308",
+              "description": "",
+              "iconUrl": "@host/secure/viewavatar?size=xsmall&avatarId=10304&avatarType=issuetype",
+              "name": "Research2",
+              "subtask": false,
+              "avatarId": 10304
+            }, {
+              "self": "@host/rest/api/2/issuetype/4",
+              "id": "4",
+              "description": "An improvement or enhancement to an existing feature or task.",
+              "iconUrl": "@host/secure/viewavatar?size=xsmall&avatarId=10310&avatarType=issuetype",
+              "name": "Improvement",
+              "subtask": false,
+              "avatarId": 10310
+            }]
+          },
+          "components": {
+            "required": false,
+            "schema": {
+              "type": "array",
+              "items": "component",
+              "system": "components"
+            },
+            "name": "Component/s",
+            "operations": ["add", "set", "remove"],
+            "allowedValues": []
+          },
+          "description": {
+            "required": false,
+            "schema": {
+              "type": "string",
+              "system": "description"
+            },
+            "name": "Description",
+            "operations": ["set"]
+          },
+          "reporter": {
+            "required": true,
+            "schema": {
+              "type": "user",
+              "system": "reporter"
+            },
+            "name": "Reporter",
+            "autoCompleteUrl": "@host/rest/api/latest/user/search?username=",
+            "operations": ["set"]
+          },
+          "fixVersions": {
+            "required": false,
+            "schema": {
+              "type": "array",
+              "items": "version",
+              "system": "fixVersions"
+            },
+            "name": "Fix Version/s",
+            "operations": ["set", "add", "remove"],
+            "allowedValues": [{
+              "self": "@host/rest/api/2/version/11629",
+              "id": "11629",
+              "name": "0.1.0",
+              "archived": false,
+              "released": true,
+              "releaseDate": "2017-05-04",
+              "userReleaseDate": "04.05.17",
+              "projectId": 10114
+            }, {
+              "self": "@host/rest/api/2/version/13331",
+              "id": "13331",
+              "name": "1.1.0",
+              "archived": false,
+              "released": true,
+              "releaseDate": "2018-11-28",
+              "userReleaseDate": "28.11.18",
+              "projectId": 10114
+            }]
+          },
+          "customfield_12400": {
+            "required": false,
+            "schema": {
+              "type": "array",
+              "items": "option",
+              "custom": "com.atlassian.jira.plugin.system.customfieldtypes:multicheckboxes",
+              "customId": 12400
+            },
+            "name": "Cust12400",
+            "operations": ["add", "set", "remove"],
+            "allowedValues": [{
+              "self": "@host/rest/api/2/customFieldOption/11400",
+              "value": "Item1",
+              "id": "11400"
+            }, {
+              "self": "@host/rest/api/2/customFieldOption/11401",
+              "value": "Item2",
+              "id": "11401"
+            }, {
+              "self": "@host/rest/api/2/customFieldOption/11402",
+              "value": "Item3",
+              "id": "11402"
+            }, {
+              "self": "@host/rest/api/2/customFieldOption/11403",
+              "value": "Item4",
+              "id": "11403"
+            }]
+          },
+          "customfield_10001": {
+            "required": false,
+            "schema": {
+              "type": "any",
+              "custom": "com.pyxis.greenhopper.jira:gh-epic-link",
+              "customId": 10001
+            },
+            "name": "Epic Link",
+            "operations": ["set"]
+          },
+          "priority": {
+            "required": false,
+            "schema": {
+              "type": "priority",
+              "system": "priority"
+            },
+            "name": "Priority",
+            "operations": ["set"],
+            "allowedValues": [{
+              "self": "@host/rest/api/2/priority/1",
+              "iconUrl": "@host/images/icons/priorities/highest.svg",
+              "name": "Highest",
+              "id": "1"
+            }, {
+              "self": "@host/rest/api/2/priority/2",
+              "iconUrl": "@host/images/icons/priorities/high.svg",
+              "name": "High",
+              "id": "2"
+            }, {
+              "self": "@host/rest/api/2/priority/3",
+              "iconUrl": "@host/images/icons/priorities/medium.svg",
+              "name": "Medium",
+              "id": "3"
+            }, {
+              "self": "@host/rest/api/2/priority/4",
+              "iconUrl": "@host/images/icons/priorities/low.svg",
+              "name": "Low",
+              "id": "4"
+            }, {
+              "self": "@host/rest/api/2/priority/5",
+              "iconUrl": "@host/images/icons/priorities/lowest.svg",
+              "name": "Lowest",
+              "id": "5"
+            }]
+          },
+          "customfield_12005": {
+            "required": false,
+            "schema": {
+              "type": "option",
+              "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+              "customId": 12005
+            },
+            "name": "Cust12005",
+            "operations": ["set"],
+            "allowedValues": [{
+              "self": "@host/rest/api/2/customFieldOption/11100",
+              "value": "Unit1",
+              "id": "11100"
+            }, {
+              "self": "@host/rest/api/2/customFieldOption/11601",
+              "value": "Unit2",
+              "id": "11601"
+            }, {
+              "self": "@host/rest/api/2/customFieldOption/11101",
+              "value": "Unit3",
+              "id": "11101"
+            }, {
+              "self": "@host/rest/api/2/customFieldOption/11102",
+              "value": "Unit4",
+              "id": "11102"
+            }, {
+              "self": "@host/rest/api/2/customFieldOption/11103",
+              "value": "Unit5",
+              "id": "11103"
+            }, {
+              "self": "@host/rest/api/2/customFieldOption/11104",
+              "value": "Unit6",
+              "id": "11104"
+            }, {
+              "self": "@host/rest/api/2/customFieldOption/11105",
+              "value": "Unit7",
+              "id": "11105"
+            }, {
+              "self": "@host/rest/api/2/customFieldOption/11112",
+              "value": "Unit8",
+              "id": "11112"
+            }, {
+              "self": "@host/rest/api/2/customFieldOption/11113",
+              "value": "Unit9",
+              "id": "11113"
+            }, {
+              "self": "@host/rest/api/2/customFieldOption/11425",
+              "value": "Unit10",
+              "id": "11425"
+            }, {
+              "self": "@host/rest/api/2/customFieldOption/11600",
+              "value": "Unit11",
+              "id": "11600"
+            }, {
+              "self": "@host/rest/api/2/customFieldOption/11426",
+              "value": "All",
+              "id": "11426"
+            }]
+          },
+          "labels": {
+            "required": false,
+            "schema": {
+              "type": "array",
+              "items": "string",
+              "system": "labels"
+            },
+            "name": "Labels",
+            "autoCompleteUrl": "@host/rest/api/1.0/labels/suggest?query=",
+            "operations": ["add", "set", "remove"]
+          },
+          "attachment": {
+            "required": false,
+            "schema": {
+              "type": "array",
+              "items": "attachment",
+              "system": "attachment"
+            },
+            "name": "Attachment",
+            "operations": []
+          },
+          "customfield_12902": {
+            "required": false,
+            "schema": {
+              "type": "option",
+              "custom": "com.atlassian.jira.plugin.system.customfieldtypes:radiobuttons",
+              "customId": 12902
+            },
+            "name": "Cust12902",
+            "operations": ["set"],
+            "allowedValues": [{
+              "self": "@host/rest/api/2/customFieldOption/12102",
+              "value": "Да",
+              "id": "12102"
+            }, {
+              "self": "@host/rest/api/2/customFieldOption/12103",
+              "value": "Нет",
+              "id": "12103"
+            }]
+          },
+          "issuelinks": {
+            "required": false,
+            "schema": {
+              "type": "array",
+              "items": "issuelinks",
+              "system": "issuelinks"
+            },
+            "name": "Linked Issues",
+            "autoCompleteUrl": "@host/rest/api/2/issue/picker?currentProjectId=&showSubTaskParent=true&showSubTasks=true&currentIssueKey=N3-206&query=",
+            "operations": ["add"]
+          },
+          "comment": {
+            "required": false,
+            "schema": {
+              "type": "comments-page",
+              "system": "comment"
+            },
+            "name": "Comment",
+            "operations": ["add", "edit", "remove"]
+          },
+          "assignee": {
+            "required": false,
+            "schema": {
+              "type": "user",
+              "system": "assignee"
+            },
+            "name": "Assignee",
+            "autoCompleteUrl": "@host/rest/api/latest/user/assignable/search?issueKey=N3-206&username=",
+            "operations": ["set"]
+          },
+          "worklog": {
+            "required": false,
+            "schema": {
+              "type": "array",
+              "items": "worklog",
+              "system": "worklog"
+            },
+            "name": "Log Work",
+            "operations": ["add"]
+          }
+        }
+      }
+    }
+  ],
+  "names": {
+    "fixVersions": "Fix Version/s",
+    "customfield_11200": "Cust11200",
+    "customfield_10111": "Cust10111",
+    "customfield_10112": "Cust10112",
+    "resolution": "Resolution",
+    "customfield_11201": "Severity",
+    "customfield_10104": "Cust10104",
+    "customfield_11711": "Cust11711",
+    "customfield_12404": "Cust12404",
+    "customfield_10105": "Cust10105",
+    "customfield_12403": "Cust12403",
+    "customfield_10106": "Cust10106",
+    "customfield_12804": "Cust12804",
+    "customfield_10109": "Cust10109",
+    "customfield_12803": "Cust12803",
+    "customfield_11716": "Confluence link",
+    "lastViewed": "Last Viewed",
+    "customfield_12000": "Cust12000",
+    "customfield_12002": "Cust12002",
+    "customfield_12001": "Cust12001",
+    "priority": "Priority",
+    "customfield_12004": "Email",
+    "customfield_12400": "Cust12400",
+    "customfield_10101": "Cust10101",
+    "customfield_12003": "Cust12003",
+    "customfield_10102": "Cust10102",
+    "customfield_12402": "Cust12402",
+    "customfield_12006": "Cust12006",
+    "customfield_10103": "Cust10103",
+    "labels": "Labels",
+    "customfield_12005": "Cust12005",
+    "customfield_11700": "Cust11700",
+    "timeestimate": "Remaining Estimate",
+    "aggregatetimeoriginalestimate": "Σ Original Estimate",
+    "versions": "Affects Version/s",
+    "customfield_11703": "Cust11703",
+    "customfield_11707": "Cust11707",
+    "issuelinks": "Linked Issues",
+    "customfield_11709": "Cust11709",
+    "assignee": "Assignee",
+    "status": "Status",
+    "components": "Component/s",
+    "customfield_11300": "milestone",
+    "customfield_11810": "Start date",
+    "customfield_12901": "Cust12901",
+    "customfield_11811": "End date",
+    "customfield_12900": "Developer",
+    "aggregatetimeestimate": "Σ Remaining Estimate",
+    "customfield_10605": "Cust10605",
+    "creator": "Creator",
+    "subtasks": "Sub-Tasks",
+    "reporter": "Reporter",
+    "customfield_12101": "Cust12101",
+    "customfield_12100": "Cust12100",
+    "aggregateprogress": "Σ Progress",
+    "customfield_12103": "Cust12103",
+    "customfield_12102": "Cust12102",
+    "customfield_10201": "Cust12101",
+    "customfield_12500": "Cust12500",
+    "customfield_11801": "Checklists",
+    "customfield_11009": "Original Estimate",
+    "customfield_11803": "Cust11803",
+    "customfield_11802": "Time in Status",
+    "customfield_11804": "Cust11804",
+    "customfield_11807": "Baseline start date",
+    "progress": "Progress",
+    "customfield_11809": "Progress",
+    "votes": "Votes",
+    "customfield_11808": "Baseline end date",
+    "issuetype": "Issue Type",
+    "timespent": "Time Spent",
+    "project": "Project",
+    "customfield_11002": "Cust11002",
+    "aggregatetimespent": "Σ Time Spent",
+    "customfield_11400": "Reviewers",
+    "customfield_12602": "Cust12602",
+    "customfield_12604": "Cust12604",
+    "customfield_12603": "OID",
+    "customfield_12605": "Cust12605",
+    "resolutiondate": "Resolved",
+    "workratio": "Work Ratio",
+    "watches": "Watchers",
+    "created": "Created",
+    "customfield_10140": "Cust10140",
+    "customfield_10141": "Cust10141",
+    "customfield_12200": "Development",
+    "customfield_10138": "Cust10138",
+    "customfield_11501": "Channel",
+    "customfield_10139": "Cust10139",
+    "customfield_11900": "Cust11900",
+    "customfield_11902": "Cust11902",
+    "customfield_11901": "Cust11901",
+    "customfield_11904": "Cust11804 RC",
+    "customfield_11903": "Cust11903",
+    "updated": "Updated",
+    "timeoriginalestimate": "Original Estimate",
+    "description": "Description",
+    "customfield_11100": "gitBranch",
+    "customfield_10133": "Cust10133",
+    "customfield_11101": "gitCommitsReferenced",
+    "customfield_10134": "Cust10134",
+    "customfield_11102": "Cust11102",
+    "customfield_10135": "Cust10135",
+    "customfield_10136": "Cust10136",
+    "customfield_10005": "Sprint",
+    "customfield_12701": "Cust12701",
+    "customfield_10006": "Flagged",
+    "customfield_12700": "Cust12700",
+    "customfield_10007": "Epic/Theme",
+    "customfield_12703": "Cust12703",
+    "customfield_10008": "Story Points",
+    "customfield_12702": "Cust12702",
+    "customfield_12705": "Cust12705",
+    "customfield_12704": "Cust12704",
+    "customfield_12706": "Environment",
+    "summary": "Summary",
+    "customfield_10120": "Cust10120",
+    "customfield_10000": "Rank",
+    "customfield_10001": "Epic Link",
+    "customfield_12301": "Environment",
+    "customfield_10124": "Cust10124",
+    "environment": "Environment",
+    "customfield_10119": "Cust10119",
+    "duedate": "Due Date"
+  },
+  "schema": {
+    "fixVersions": {
+      "type": "array",
+      "items": "version",
+      "system": "fixVersions"
+    },
+    "customfield_11200": {
+      "type": "string",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textfield",
+      "customId": 11200
+    },
+    "customfield_10111": {
+      "type": "number",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:float",
+      "customId": 10111
+    },
+    "customfield_10112": {
+      "type": "option",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+      "customId": 10112
+    },
+    "resolution": {
+      "type": "resolution",
+      "system": "resolution"
+    },
+    "customfield_11201": {
+      "type": "option",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+      "customId": 11201
+    },
+    "customfield_10104": {
+      "type": "option",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+      "customId": 10104
+    },
+    "customfield_11711": {
+      "type": "option",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+      "customId": 11711
+    },
+    "customfield_12404": {
+      "type": "array",
+      "items": "option",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:multiselect",
+      "customId": 12404
+    },
+    "customfield_10105": {
+      "type": "number",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:float",
+      "customId": 10105
+    },
+    "customfield_12403": {
+      "type": "array",
+      "items": "option",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:multiselect",
+      "customId": 12403
+    },
+    "customfield_10106": {
+      "type": "string",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textfield",
+      "customId": 10106
+    },
+    "customfield_12804": {
+      "type": "string",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textfield",
+      "customId": 12804
+    },
+    "customfield_10109": {
+      "type": "string",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textfield",
+      "customId": 10109
+    },
+    "customfield_12803": {
+      "type": "number",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:float",
+      "customId": 12803
+    },
+    "customfield_11716": {
+      "type": "string",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:url",
+      "customId": 11716
+    },
+    "lastViewed": {
+      "type": "datetime",
+      "system": "lastViewed"
+    },
+    "customfield_12000": {
+      "type": "user",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:userpicker",
+      "customId": 12000
+    },
+    "customfield_12002": {
+      "type": "string",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textfield",
+      "customId": 12002
+    },
+    "customfield_12001": {
+      "type": "string",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textfield",
+      "customId": 12001
+    },
+    "priority": {
+      "type": "priority",
+      "system": "priority"
+    },
+    "customfield_12004": {
+      "type": "string",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textfield",
+      "customId": 12004
+    },
+    "customfield_12400": {
+      "type": "array",
+      "items": "option",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:multicheckboxes",
+      "customId": 12400
+    },
+    "customfield_10101": {
+      "type": "user",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:userpicker",
+      "customId": 10101
+    },
+    "customfield_12003": {
+      "type": "string",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textfield",
+      "customId": 12003
+    },
+    "customfield_10102": {
+      "type": "user",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:userpicker",
+      "customId": 10102
+    },
+    "customfield_12402": {
+      "type": "array",
+      "items": "option",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:multiselect",
+      "customId": 12402
+    },
+    "customfield_12006": {
+      "type": "user",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:userpicker",
+      "customId": 12006
+    },
+    "customfield_10103": {
+      "type": "user",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:userpicker",
+      "customId": 10103
+    },
+    "labels": {
+      "type": "array",
+      "items": "string",
+      "system": "labels"
+    },
+    "customfield_12005": {
+      "type": "option",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+      "customId": 12005
+    },
+    "customfield_11700": {
+      "type": "number",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:float",
+      "customId": 11700
+    },
+    "timeestimate": {
+      "type": "number",
+      "system": "timeestimate"
+    },
+    "aggregatetimeoriginalestimate": {
+      "type": "number",
+      "system": "aggregatetimeoriginalestimate"
+    },
+    "versions": {
+      "type": "array",
+      "items": "version",
+      "system": "versions"
+    },
+    "customfield_11703": {
+      "type": "string",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textfield",
+      "customId": 11703
+    },
+    "customfield_11707": {
+      "type": "option",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+      "customId": 11707
+    },
+    "issuelinks": {
+      "type": "array",
+      "items": "issuelinks",
+      "system": "issuelinks"
+    },
+    "customfield_11709": {
+      "type": "array",
+      "items": "option",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:multicheckboxes",
+      "customId": 11709
+    },
+    "assignee": {
+      "type": "user",
+      "system": "assignee"
+    },
+    "status": {
+      "type": "status",
+      "system": "status"
+    },
+    "components": {
+      "type": "array",
+      "items": "component",
+      "system": "components"
+    },
+    "customfield_11300": {
+      "type": "array",
+      "items": "string",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:labels",
+      "customId": 11300
+    },
+    "customfield_11810": {
+      "type": "date",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:datepicker",
+      "customId": 11810
+    },
+    "customfield_12901": {
+      "type": "user",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:userpicker",
+      "customId": 12901
+    },
+    "customfield_11811": {
+      "type": "date",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:datepicker",
+      "customId": 11811
+    },
+    "customfield_12900": {
+      "type": "user",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:userpicker",
+      "customId": 12900
+    },
+    "aggregatetimeestimate": {
+      "type": "number",
+      "system": "aggregatetimeestimate"
+    },
+    "customfield_10605": {
+      "type": "string",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textfield",
+      "customId": 10605
+    },
+    "creator": {
+      "type": "user",
+      "system": "creator"
+    },
+    "subtasks": {
+      "type": "array",
+      "items": "issuelinks",
+      "system": "subtasks"
+    },
+    "reporter": {
+      "type": "user",
+      "system": "reporter"
+    },
+    "customfield_12101": {
+      "type": "string",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textarea",
+      "customId": 12101
+    },
+    "customfield_12100": {
+      "type": "string",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textarea",
+      "customId": 12100
+    },
+    "aggregateprogress": {
+      "type": "progress",
+      "system": "aggregateprogress"
+    },
+    "customfield_12103": {
+      "type": "array",
+      "items": "option",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:multiselect",
+      "customId": 12103
+    },
+    "customfield_12102": {
+      "type": "string",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textarea",
+      "customId": 12102
+    },
+    "customfield_10201": {
+      "type": "option",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+      "customId": 10201
+    },
+    "customfield_12500": {
+      "type": "user",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:userpicker",
+      "customId": 12500
+    },
+    "customfield_11801": {
+      "type": "string",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textarea",
+      "customId": 11801
+    },
+    "customfield_11009": {
+      "type": "any",
+      "custom": "com.atlassian.jira.toolkit:originalestimate",
+      "customId": 11009
+    },
+    "customfield_11803": {
+      "type": "user",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:userpicker",
+      "customId": 11803
+    },
+    "customfield_11802": {
+      "type": "any",
+      "custom": "com.atlassian.jira.ext.charting:timeinstatus",
+      "customId": 11802
+    },
+    "customfield_11804": {
+      "type": "user",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:userpicker",
+      "customId": 11804
+    },
+    "customfield_11807": {
+      "type": "date",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:datepicker",
+      "customId": 11807
+    },
+    "progress": {
+      "type": "progress",
+      "system": "progress"
+    },
+    "customfield_11809": {
+      "type": "number",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:float",
+      "customId": 11809
+    },
+    "votes": {
+      "type": "votes",
+      "system": "votes"
+    },
+    "customfield_11808": {
+      "type": "date",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:datepicker",
+      "customId": 11808
+    },
+    "issuetype": {
+      "type": "issuetype",
+      "system": "issuetype"
+    },
+    "timespent": {
+      "type": "number",
+      "system": "timespent"
+    },
+    "project": {
+      "type": "project",
+      "system": "project"
+    },
+    "customfield_11002": {
+      "type": "string",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textarea",
+      "customId": 11002
+    },
+    "aggregatetimespent": {
+      "type": "number",
+      "system": "aggregatetimespent"
+    },
+    "customfield_11400": {
+      "type": "array",
+      "items": "user",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:multiuserpicker",
+      "customId": 11400
+    },
+    "customfield_12602": {
+      "type": "string",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textfield",
+      "customId": 12602
+    },
+    "customfield_12604": {
+      "type": "string",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textfield",
+      "customId": 12604
+    },
+    "customfield_12603": {
+      "type": "string",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textfield",
+      "customId": 12603
+    },
+    "customfield_12605": {
+      "type": "array",
+      "items": "user",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:multiuserpicker",
+      "customId": 12605
+    },
+    "resolutiondate": {
+      "type": "datetime",
+      "system": "resolutiondate"
+    },
+    "workratio": {
+      "type": "number",
+      "system": "workratio"
+    },
+    "watches": {
+      "type": "watches",
+      "system": "watches"
+    },
+    "created": {
+      "type": "datetime",
+      "system": "created"
+    },
+    "customfield_10140": {
+      "type": "datetime",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:datetime",
+      "customId": 10140
+    },
+    "customfield_10141": {
+      "type": "datetime",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:datetime",
+      "customId": 10141
+    },
+    "customfield_12200": {
+      "type": "any",
+      "custom": "com.atlassian.jira.plugins.jira-development-integration-plugin:devsummary",
+      "customId": 12200
+    },
+    "customfield_10138": {
+      "type": "datetime",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:datetime",
+      "customId": 10138
+    },
+    "customfield_11501": {
+      "type": "option",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+      "customId": 11501
+    },
+    "customfield_10139": {
+      "type": "datetime",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:datetime",
+      "customId": 10139
+    },
+    "customfield_11900": {
+      "type": "string",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textfield",
+      "customId": 11900
+    },
+    "customfield_11902": {
+      "type": "option",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+      "customId": 11902
+    },
+    "customfield_11901": {
+      "type": "any",
+      "custom": "com.atlassian.jira.ext.charting:timeinstatus",
+      "customId": 11901
+    },
+    "customfield_11904": {
+      "type": "user",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:userpicker",
+      "customId": 11904
+    },
+    "customfield_11903": {
+      "type": "option",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+      "customId": 11903
+    },
+    "updated": {
+      "type": "datetime",
+      "system": "updated"
+    },
+    "timeoriginalestimate": {
+      "type": "number",
+      "system": "timeoriginalestimate"
+    },
+    "description": {
+      "type": "string",
+      "system": "description"
+    },
+    "customfield_11100": {
+      "type": "any",
+      "custom": "com.xiplink.jira.git.jira_git_plugin:gitbranches",
+      "customId": 11100
+    },
+    "customfield_10133": {
+      "type": "string",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textarea",
+      "customId": 10133
+    },
+    "customfield_11101": {
+      "type": "any",
+      "custom": "com.xiplink.jira.git.jira_git_plugin:gitcommitsreferenced",
+      "customId": 11101
+    },
+    "customfield_10134": {
+      "type": "string",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textarea",
+      "customId": 10134
+    },
+    "customfield_11102": {
+      "type": "number",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:float",
+      "customId": 11102
+    },
+    "customfield_10135": {
+      "type": "array",
+      "items": "option",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:multicheckboxes",
+      "customId": 10135
+    },
+    "customfield_10136": {
+      "type": "string",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textarea",
+      "customId": 10136
+    },
+    "customfield_10005": {
+      "type": "array",
+      "items": "string",
+      "custom": "com.pyxis.greenhopper.jira:gh-sprint",
+      "customId": 10005
+    },
+    "customfield_12701": {
+      "type": "option",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+      "customId": 12701
+    },
+    "customfield_10006": {
+      "type": "array",
+      "items": "option",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:multicheckboxes",
+      "customId": 10006
+    },
+    "customfield_12700": {
+      "type": "array",
+      "items": "option",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:multicheckboxes",
+      "customId": 12700
+    },
+    "customfield_10007": {
+      "type": "array",
+      "items": "string",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:labels",
+      "customId": 10007
+    },
+    "customfield_12703": {
+      "type": "number",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:float",
+      "customId": 12703
+    },
+    "customfield_10008": {
+      "type": "number",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:float",
+      "customId": 10008
+    },
+    "customfield_12702": {
+      "type": "string",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textfield",
+      "customId": 12702
+    },
+    "customfield_12705": {
+      "type": "string",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textfield",
+      "customId": 12705
+    },
+    "customfield_12704": {
+      "type": "string",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textfield",
+      "customId": 12704
+    },
+    "customfield_12706": {
+      "type": "array",
+      "items": "option",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:multiselect",
+      "customId": 12706
+    },
+    "summary": {
+      "type": "string",
+      "system": "summary"
+    },
+    "customfield_10120": {
+      "type": "string",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textarea",
+      "customId": 10120
+    },
+    "customfield_10000": {
+      "type": "any",
+      "custom": "com.pyxis.greenhopper.jira:gh-lexo-rank",
+      "customId": 10000
+    },
+    "customfield_10001": {
+      "type": "any",
+      "custom": "com.pyxis.greenhopper.jira:gh-epic-link",
+      "customId": 10001
+    },
+    "customfield_12301": {
+      "type": "option",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+      "customId": 12301
+    },
+    "customfield_10124": {
+      "type": "option",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+      "customId": 10124
+    },
+    "environment": {
+      "type": "string",
+      "system": "environment"
+    },
+    "customfield_10119": {
+      "type": "datetime",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:datetime",
+      "customId": 10119
+    },
+    "duedate": {
+      "type": "date",
+      "system": "duedate"
+    }
+  }
+}

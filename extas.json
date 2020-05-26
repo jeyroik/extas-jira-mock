@@ -1,0 +1,211 @@
+{
+  "name": "extas/jira-mock",
+  "package_classes": [
+    {
+      "class": "extas\\components\\jira\\JiraRouteRepository",
+      "interface": "extas\\interfaces\\jira\\IJiraRouteRepository"
+    },
+    {
+      "class": "extas\\components\\jira\\JiraRouteRepository",
+      "interface": "jiraRouteRepository"
+    }
+  ],
+  "plugins": [
+    {
+      "class": "extas\\components\\plugins\\PluginInstallJiraRoute",
+      "stage": "extas.install"
+    }
+  ],
+  "extensions": [
+    {
+      "class": "extas\\components\\extensions\\ExtensionRepositoryGet",
+      "interface": "extas\\interfaces\\extensions\\IExtensionRepositoryGet",
+      "subject": "*",
+      "methods": [
+        "jiraRouteRepository"
+      ]
+    }
+  ],
+  "jira_mock_routes": [
+    {
+      "name": "/rest/api/2/issue",
+      "title": "Create an issue",
+      "description": "Create an issue",
+      "class": "extas\\components\\jira\\routes\\RoutePrepared",
+      "parameters": {
+        "path": {
+          "name": "path",
+          "value": "/resources/issues/create.json"
+        }
+      }
+    },
+    {
+      "name": "/rest/api/2/project/10114/statuses",
+      "title": "Statuses list",
+      "description": "List all statuses",
+      "class": "extas\\components\\jira\\routes\\RoutePrepared",
+      "parameters": {
+        "path": {
+          "name": "path",
+          "value": "/resources/projects/statuses.json"
+        }
+      }
+    },
+    {
+      "name": "/rest/api/2/project/N3/statuses",
+      "title": "Statuses list by project",
+      "description": "All statuses by project key",
+      "class": "extas\\components\\jira\\routes\\RoutePrepared",
+      "parameters": {
+        "path": {
+          "name": "path",
+          "value": "/resources/projects/statuses.json"
+        }
+      }
+    },
+    {
+      "name": "/rest/api/2/project",
+      "title": "Projects",
+      "description": "List all projects",
+      "class": "extas\\components\\jira\\routes\\RoutePrepared",
+      "parameters": {
+        "path": {
+          "name": "path",
+          "value": "/resources/projects/all.json"
+        }
+      }
+    },
+    {
+      "name": "/rest/api/2/issue/createmeta",
+      "title": "Create-meta",
+      "description": "Meta information for creating issue",
+      "class": "extas\\components\\jira\\routes\\RoutePrepared",
+      "parameters": {
+        "path": {
+          "name": "path",
+          "value": "/resources/metas/create.json"
+        }
+      }
+    },
+    {
+      "name": "/rest/api/2/search",
+      "title": "Search",
+      "description": "Search an issue",
+      "class": "extas\\components\\jira\\routes\\RoutePrepared",
+      "parameters": {
+        "path": {
+          "name": "path",
+          "value": "/resources/issues/search.json"
+        }
+      }
+    },
+    {
+      "name": "/rest/agile/1.0/board",
+      "title": "Boards",
+      "description": "List all boards",
+      "class": "extas\\components\\jira\\routes\\RoutePrepared",
+      "parameters": {
+        "path": {
+          "name": "path",
+          "value": "/resources/boards/all.json"
+        }
+      }
+    },
+    {
+      "name": "/rest/agile/1.0/board/",
+      "title": "Boards",
+      "description": "List all boards",
+      "class": "extas\\components\\jira\\routes\\RoutePrepared",
+      "parameters": {
+        "path": {
+          "name": "path",
+          "value": "/resources/boards/all.json"
+        }
+      }
+    },
+    {
+      "name": "/rest/agile/1.0/sprint",
+      "title": "Create sprint",
+      "description": "Create sprint",
+      "class": "extas\\components\\jira\\routes\\RoutePrepared",
+      "parameters": {
+        "path": {
+          "name": "path",
+          "value": "/resources/sprints/create.json"
+        }
+      }
+    },
+    {
+      "name": "/rest/agile/1.0/sprint/37",
+      "title": "Update board",
+      "description": "Update board",
+      "class": "extas\\components\\jira\\routes\\RoutePrepared",
+      "parameters": {
+        "path": {
+          "name": "path",
+          "value": "/resources/sprints/update.json"
+        }
+      }
+    },
+    {
+      "name": "/rest/api/2/version",
+      "title": "Create version",
+      "description": "Create version",
+      "class": "extas\\components\\jira\\routes\\RoutePrepared",
+      "parameters": {
+        "path": {
+          "name": "path",
+          "value": "/resources/versions/create.json"
+        }
+      }
+    },
+    {
+      "name": "/rest/api/2/issue",
+      "title": "Create issue",
+      "description": "Create issue",
+      "class": "extas\\components\\jira\\routes\\RoutePrepared",
+      "parameters": {
+        "path": {
+          "name": "path",
+          "value": "/resources/issues/create.json"
+        }
+      }
+    },
+    {
+      "name": "/rest/api/2/version/37",
+      "title": "Update version",
+      "description": "Update version",
+      "class": "extas\\components\\jira\\routes\\RoutePrepared",
+      "parameters": {
+        "path": {
+          "name": "path",
+          "value": "/resources/versions/update.json"
+        }
+      }
+    },
+    {
+      "name": "/rest/api/2/issue/N3-206",
+      "title": "Update an issue",
+      "description": "Update an issue",
+      "class": "extas\\components\\jira\\routes\\RouteLogJsonRequest",
+      "parameters": {
+        "path": {
+          "name": "path",
+          "value": "/logs/update.log"
+        }
+      }
+    },
+    {
+      "name": "/rest/api/2/issue/65125",
+      "title": "Update an issue",
+      "description": "Update an issue",
+      "class": "extas\\components\\jira\\routes\\RouteLogJsonRequest",
+      "parameters": {
+        "path": {
+          "name": "path",
+          "value": "/logs/update.log"
+        }
+      }
+    }
+  ]
+}

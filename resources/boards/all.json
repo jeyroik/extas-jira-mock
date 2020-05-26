@@ -1,0 +1,56 @@
+{
+  "maxResults": 50,
+  "startAt": 0,
+  "isLast": true,
+  "values": [{
+    "id": 34,
+    "self": "@host/rest/agile/1.0/board/34",
+    "name": "N1 board",
+    "type": "scrum"
+  }, {
+    "id": 35,
+    "self": "@host/rest/agile/1.0/board/35",
+    "name": "N2 board",
+    "type": "scrum"
+  }, {
+    "id": 36,
+    "self": "@host/rest/agile/1.0/board/36",
+    "name": "N4 board",
+    "type": "scrum"
+  }, {
+    "id": 37,
+    "self": "@host/rest/agile/1.0/board/37",
+    "name": "N5 board",
+    "type": "scrum"
+  }, {
+    "id": 41,
+    "self": "@host/rest/agile/1.0/board/41",
+    "name": "N3 board",
+    "type": "scrum"
+  }, {
+    "id": 129,
+    "self": "@host/rest/agile/1.0/board/129",
+    "name": "Scrum board",
+    "type": "scrum"
+  }, {
+    "id": 200,
+    "self": "@host/rest/agile/1.0/board/200",
+    "name": "N6I-Scrum",
+    "type": "scrum"
+  }, {
+    "id": 201,
+    "self": "@host/rest/agile/1.0/board/201",
+    "name": "N7",
+    "type": "scrum"
+  }, {
+    "id": 202,
+    "self": "@host/rest/agile/1.0/board/202",
+    "name": "N7: Subtitle",
+    "type": "scrum"
+  }, {
+    "id": 232,
+    "self": "@host/rest/agile/1.0/board/232",
+    "name": "N6PRJN7 board",
+    "type": "scrum"
+  }]
+}
