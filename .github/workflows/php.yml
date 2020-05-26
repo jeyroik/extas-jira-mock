@@ -40,7 +40,10 @@ jobs:
       env:
         EXTAS__JIRA_MOCK__HOST: test
         EXTAS__JIRA_MOCK__BASE_PATH: $PWD/tests
-      run: php -S 0.0.0.0:8080 -t src/web > /dev/null 2>&1 &
+      run: php -S 0.0.0.0:8080 -t src/web > /server.log 2>&1 &
+
+    - name: Try server
+      run: curl 0.0.0.0:8080//rest/api/2/issue
 
     - name: Extas install
       run: vendor/bin/extas i
