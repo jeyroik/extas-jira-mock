@@ -5,6 +5,8 @@ use extas\components\Item;
 use extas\interfaces\jira\IJiraRoute;
 use extas\interfaces\jira\IMockServer;
 use extas\interfaces\stages\IStageJiraMockResponse;
+use Psr\Http\Message\RequestInterface;
+use Psr\Http\Message\ResponseInterface;
 
 /**
  * Class MockServer
@@ -17,11 +19,13 @@ use extas\interfaces\stages\IStageJiraMockResponse;
 class MockServer extends Item implements IMockServer
 {
     /**
-     * Operate request
+     * @param RequestInterface $request
+     * @param ResponseInterface $response
+     * @return ResponseInterface
      */
-    public function run(): void
+    public function run(RequestInterface $request, ResponseInterface $response): ResponseInterface
     {
-        $route = $_SERVER['REQUEST_URI'];
+        $route = $request->getUri();
         $parsed = parse_url($route);
 
         header('Content-Type: application/json');
@@ -36,17 +40,19 @@ class MockServer extends Item implements IMockServer
                 'parsed' => $parsed,
                 'route' => $route
             ]);
-            $result = $dispatcher($this);
+            $result = $dispatcher($this, $request);
             foreach ($this->getPluginsByStage(IStageJiraMockResponse::NAME) as $plugin) {
                 /**
                  * @var IStageJiraMockResponse $plugin
                  */
-                $plugin($result);
+                $plugin($request, $result);
             }
-            echo $result;
+            $response->getBody()->write($result);
         } else {
-            echo json_encode(['error' => 'Unknown path "' . $parsed['path'] . '"']);
+            $response->getBody()->write(json_encode(['error' => 'Unknown path "' . $parsed['path'] . '"']));
         }
+
+        return $response;
     }
 
     /**

@@ -1,6 +1,8 @@
 <?php
 namespace extas\interfaces\stages;
 
+use Psr\Http\Message\RequestInterface;
+
 /**
  * Interface IStageJiraMockResponse
  *
@@ -14,5 +16,5 @@ interface IStageJiraMockResponse
     /**
      * @param string $response
      */
-    public function __invoke(string &$response): void;
+    public function __invoke(RequestInterface $request, string &$response): void;
 }

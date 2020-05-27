@@ -14,6 +14,10 @@
     {
       "class": "extas\\components\\plugins\\PluginInstallJiraRoute",
       "stage": "extas.install"
+    },
+    {
+      "class": "extas\\components\\plugins\\jsonrpc\\PluginJiraMockRoutes",
+      "stage": "extas.jsonrpc.init"
     }
   ],
   "extensions": [

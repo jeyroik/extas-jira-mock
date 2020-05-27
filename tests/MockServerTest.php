@@ -3,6 +3,7 @@ namespace tests;
 
 use Dotenv\Dotenv;
 use extas\components\extensions\TSnuffExtensions;
+use extas\components\http\TSnuffHttp;
 use extas\components\jira\JiraRoute;
 use extas\components\jira\JiraRouteRepository;
 use extas\components\jira\MockServer;
@@ -21,6 +22,7 @@ use PHPUnit\Framework\TestCase;
 class MockServerTest extends TestCase
 {
     use TSnuffExtensions;
+    use TSnuffHttp;
 
     protected IRepository $routeRepo;
 
@@ -62,12 +64,16 @@ class MockServerTest extends TestCase
 
         $_REQUEST['REQUEST_URI'] = 'http://localhost/test';
 
-        ob_start();
-        $server->run();
-        $response = ob_get_contents();
-        ob_end_flush();
+        $response = $server->run(
+            $this->getPsrRequest('', [], '', 'GET', '/test'),
+            $this->getPsrResponse()
+        );
 
-        $this->assertEquals('{"test": "is ok"}', $response, 'Response mismatched');
+        $this->assertEquals(
+            '{"test": "is ok"}',
+            (string) $response->getBody(),
+            'Response mismatched: ' . $response->getBody()
+        );
     }
 
     public function testRouteLogJsonRequest()
@@ -90,7 +96,10 @@ class MockServerTest extends TestCase
 
         $_REQUEST['REQUEST_URI'] = 'http://localhost/test';
 
-        $server->run();
+        $server->run(
+            $this->getPsrRequest('', [], '', 'GET', '/test'),
+            $this->getPsrResponse()
+        );
 
         $this->assertTrue(file_exists(getcwd() . '/tests/log.test.json'), 'Missed log file');
         $this->assertTrue(

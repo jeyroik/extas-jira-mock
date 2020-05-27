@@ -2,6 +2,8 @@
 namespace extas\interfaces\jira;
 
 use extas\interfaces\IItem;
+use Psr\Http\Message\RequestInterface;
+use Psr\Http\Message\ResponseInterface;
 
 /**
  * Interface IMockServer
@@ -27,7 +29,9 @@ interface IMockServer extends IItem
     public function getHost(): string;
 
     /**
-     * Run server
+     * @param RequestInterface $request
+     * @param ResponseInterface $response
+     * @return ResponseInterface
      */
-    public function run(): void;
+    public function run(RequestInterface $request, ResponseInterface $response): ResponseInterface;
 }
