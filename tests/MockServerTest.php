@@ -9,9 +9,11 @@ use extas\components\jira\JiraRouteRepository;
 use extas\components\jira\MockServer;
 use extas\components\jira\routes\RouteLogJsonRequest;
 use extas\components\jira\routes\RoutePrepared;
+use extas\interfaces\jira\IMockServer;
 use extas\interfaces\repositories\IRepository;
 use extas\interfaces\samples\parameters\ISampleParameter;
 use PHPUnit\Framework\TestCase;
+use Psr\Http\Message\ResponseInterface;
 
 /**
  * Class MockServerTest
@@ -46,28 +48,8 @@ class MockServerTest extends TestCase
 
     public function testRoutePrepared()
     {
-        $this->routeRepo->create(new JiraRoute([
-            JiraRoute::FIELD__NAME => '/test',
-            JiraRoute::FIELD__CLASS => RoutePrepared::class,
-            JiraRoute::FIELD__PARAMETERS => [
-                RoutePrepared::PARAM__PATH => [
-                    ISampleParameter::FIELD__NAME => RoutePrepared::PARAM__PATH,
-                    ISampleParameter::FIELD__VALUE => '/prepared.json'
-                ]
-            ]
-        ]));
-
-        $server = new MockServer([
-            MockServer::FIELD__HOST => 'test',
-            MockServer::FIELD__BASE_PATH => getcwd() . '/tests'
-        ]);
-
-        $_REQUEST['REQUEST_URI'] = 'http://localhost/test';
-
-        $response = $server->run(
-            $this->getPsrRequest('', [], '', 'GET', '/test'),
-            $this->getPsrResponse()
-        );
+        $this->createRoute('/prepared.json', RoutePrepared::class);
+        $response = $this->runServer();
 
         $this->assertEquals(
             '{"test": "is ok"}',
@@ -78,34 +60,66 @@ class MockServerTest extends TestCase
 
     public function testRouteLogJsonRequest()
     {
-        $this->routeRepo->create(new JiraRoute([
-            JiraRoute::FIELD__NAME => '/test',
-            JiraRoute::FIELD__CLASS => RouteLogJsonRequest::class,
-            JiraRoute::FIELD__PARAMETERS => [
-                RouteLogJsonRequest::PARAM__PATH => [
-                    ISampleParameter::FIELD__NAME => RouteLogJsonRequest::PARAM__PATH,
-                    ISampleParameter::FIELD__VALUE => '/log.test.json'
-                ]
-            ]
-        ]));
-
-        $server = new MockServer([
-            MockServer::FIELD__HOST => 'test',
-            MockServer::FIELD__BASE_PATH => getcwd() . '/tests'
-        ]);
-
-        $_REQUEST['REQUEST_URI'] = 'http://localhost/test';
-
-        $server->run(
-            $this->getPsrRequest('', [], '', 'GET', '/test'),
-            $this->getPsrResponse()
-        );
-
+        $this->createRoute('/log.test.json', RouteLogJsonRequest::class);
+        $this->runServer();
         $this->assertTrue(file_exists(getcwd() . '/tests/log.test.json'), 'Missed log file');
         $this->assertTrue(
-            (bool) strpos(file_get_contents(getcwd() . '/tests/log.test.json'), '{"test":"is ok"}'),
+            (bool) strpos(file_get_contents(getcwd() . '/tests/log.test.json'), '{"test": "is ok"}'),
             'Log contents mismatched'
         );
         unlink(getcwd() . '/tests/log.test.json');
+    }
+
+    public function testUnknownPath()
+    {
+        $response = $this->runServer('/unknown');
+        $this->assertEquals(
+            json_encode(['error' => 'Unknown path "/unknown"']),
+            (string) $response->getBody(),
+            'Response mismatched: ' . $response->getBody()
+        );
+    }
+
+    /**
+     * @param string $path
+     * @return ResponseInterface
+     */
+    protected function runServer(string $path = '/test'): ResponseInterface
+    {
+        $server = $this->getServer();
+
+        return $server->run(
+            $this->getPsrRequest('', [], '', 'GET', $path),
+            $this->getPsrResponse()
+        );
+    }
+
+    /**
+     * @param string $path
+     * @param string $class
+     */
+    protected function createRoute(string $path, string $class): void
+    {
+        $this->routeRepo->create(new JiraRoute([
+            JiraRoute::FIELD__NAME => '/test',
+            JiraRoute::FIELD__CLASS => $class,
+            JiraRoute::FIELD__PARAMETERS => [
+                'path' => [
+                    ISampleParameter::FIELD__NAME => 'path',
+                    ISampleParameter::FIELD__VALUE => $path
+                ]
+            ]
+        ]));
+    }
+
+    /**
+     * @return IMockServer
+     */
+    protected function getServer(): IMockServer
+    {
+        return new MockServer([
+            MockServer::FIELD__HOST => 'test',
+            MockServer::FIELD__BASE_PATH => getcwd() . '/tests'
+        ]);
     }
 }
