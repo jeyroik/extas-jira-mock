@@ -9,9 +9,13 @@ use extas\components\jira\JiraRouteRepository;
 use extas\components\jira\MockServer;
 use extas\components\jira\routes\RouteLogJsonRequest;
 use extas\components\jira\routes\RoutePrepared;
+use extas\components\plugins\Plugin;
+use extas\components\plugins\PluginRepository;
+use extas\components\plugins\TSnuffPlugins;
 use extas\interfaces\jira\IMockServer;
 use extas\interfaces\repositories\IRepository;
 use extas\interfaces\samples\parameters\ISampleParameter;
+use extas\interfaces\stages\IStageJiraMockResponse;
 use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\ResponseInterface;
 
@@ -25,8 +29,10 @@ class MockServerTest extends TestCase
 {
     use TSnuffExtensions;
     use TSnuffHttp;
+    use TSnuffPlugins;
 
     protected IRepository $routeRepo;
+    protected IRepository $pluginRepo;
 
     protected function setUp(): void
     {
@@ -35,6 +41,7 @@ class MockServerTest extends TestCase
         $env->load();
 
         $this->routeRepo = new JiraRouteRepository();
+        $this->pluginRepo = new PluginRepository();
         $this->addReposForExt([
             'jiraRouteRepository' => JiraRouteRepository::class
         ]);
@@ -43,12 +50,15 @@ class MockServerTest extends TestCase
     protected function tearDown(): void
     {
         $this->routeRepo->delete([JiraRoute::FIELD__NAME => '/test']);
+        $this->pluginRepo->delete([Plugin::FIELD__CLASS => 'Unknown']);
         $this->deleteSnuffExtensions();
+        $this->deleteSnuffPlugins();
     }
 
     public function testRoutePrepared()
     {
         $this->createRoute('/prepared.json', RoutePrepared::class);
+        $this->createPluginEmpty([IStageJiraMockResponse::NAME]);
         $response = $this->runServer();
 
         $this->assertEquals(
@@ -56,6 +66,8 @@ class MockServerTest extends TestCase
             (string) $response->getBody(),
             'Response mismatched: ' . $response->getBody()
         );
+
+        $this->assertTrue(\extas\components\plugins\PluginEmpty::$worked);
     }
 
     public function testRoutePreparedMissed()
