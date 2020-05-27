@@ -65,6 +65,9 @@ class PluginJiraMockRoutesTest extends TestCase
         $routes = $app->getRouteCollector()->getRoutes();
         $this->createRoute('/prepared.json', RoutePrepared::class);
 
+        putenv('EXTAS__JIRA_MOCK__HOST=test');
+        putenv('EXTAS__JIRA_MOCK__BASE_PATH=' . getcwd() . '/tests');
+
         foreach ($routes as $route) {
             if ($route->getPattern() == '/') {
                 $dispatcher = $route->getCallable();
