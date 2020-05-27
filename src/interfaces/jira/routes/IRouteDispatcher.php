@@ -4,6 +4,7 @@ namespace extas\interfaces\jira\routes;
 use extas\interfaces\IItem;
 use extas\interfaces\jira\IJiraRoute;
 use extas\interfaces\jira\IMockServer;
+use Psr\Http\Message\RequestInterface;
 
 /**
  * Interface IRouteDispatcher
@@ -20,9 +21,10 @@ interface IRouteDispatcher extends IItem
 
     /**
      * @param IMockServer $server
+     * @param RequestInterface $request
      * @return string
      */
-    public function __invoke(IMockServer $server): string;
+    public function __invoke(IMockServer $server, RequestInterface $request): string;
 
     /**
      * @return array

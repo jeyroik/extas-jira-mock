@@ -2,6 +2,7 @@
 namespace extas\components\jira\routes;
 
 use extas\interfaces\jira\IMockServer;
+use Psr\Http\Message\RequestInterface;
 
 /**
  * Class RouteLogJsonRequest
@@ -15,15 +16,16 @@ class RouteLogJsonRequest extends RouteDispatcher
 
     /**
      * @param IMockServer $server
+     * @param RequestInterface $request
      * @return string
      */
-    public function __invoke(IMockServer $server): string
+    public function __invoke(IMockServer $server, RequestInterface $request): string
     {
         $route = $this->getRoute();
         $logPathSuffix = $route->getParameterValue(static::PARAM__PATH);
 
         $logPath = $server->getBasePath() . $logPathSuffix;
-        $json = file_get_contents('php://input');
+        $json = (string) $request->getBody();
 
         file_put_contents(
             $logPath,

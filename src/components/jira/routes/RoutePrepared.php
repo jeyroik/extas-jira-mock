@@ -3,6 +3,7 @@ namespace extas\components\jira\routes;
 
 use extas\components\Replace;
 use extas\interfaces\jira\IMockServer;
+use Psr\Http\Message\RequestInterface;
 
 /**
  * Class RoutePrepared
@@ -16,9 +17,10 @@ class RoutePrepared extends RouteDispatcher
 
     /**
      * @param IMockServer $server
+     * @param RequestInterface $request
      * @return string
      */
-    public function __invoke(IMockServer $server): string
+    public function __invoke(IMockServer $server, RequestInterface $request): string
     {
         $route = $this->getRoute();
         $preparedPathSuffix = $route->getParameterValue(static::PARAM__PATH);

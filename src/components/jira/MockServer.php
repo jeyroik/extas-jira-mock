@@ -28,7 +28,7 @@ class MockServer extends Item implements IMockServer
         $route = $request->getUri();
         $parsed = parse_url($route);
 
-        header('Content-Type: application/json');
+        $response->withHeader('Content-Type', 'application/json');
 
         /**
          * @var IJiraRoute $route
