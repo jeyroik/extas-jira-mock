@@ -14,14 +14,6 @@ use extas\interfaces\jira\routes\IRouteDispatcher;
 abstract class RouteDispatcher extends Item implements IRouteDispatcher
 {
     /**
-     * @return array
-     */
-    public function getParsed(): array
-    {
-        return $this->config[static::FIELD__PARSED] ?? [];
-    }
-
-    /**
      * @return IJiraRoute
      */
     public function getRoute(): IJiraRoute

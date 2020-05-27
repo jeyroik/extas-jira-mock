@@ -4,6 +4,7 @@ namespace extas\components\jira;
 use extas\components\Item;
 use extas\interfaces\jira\IJiraRoute;
 use extas\interfaces\jira\IMockServer;
+use extas\interfaces\jira\routes\IRouteDispatcher;
 use extas\interfaces\stages\IStageJiraMockResponse;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
@@ -36,10 +37,7 @@ class MockServer extends Item implements IMockServer
         $route = $this->jiraRouteRepository()->one([IJiraRoute::FIELD__NAME => $parsed['path']]);
 
         if ($route) {
-            $dispatcher = $route->buildClassWithParameters([
-                'parsed' => $parsed,
-                'route' => $route
-            ]);
+            $dispatcher = $route->buildClassWithParameters([IRouteDispatcher::FIELD__ROUTE => $route]);
             $result = $dispatcher($this, $request);
             foreach ($this->getPluginsByStage(IStageJiraMockResponse::NAME) as $plugin) {
                 /**

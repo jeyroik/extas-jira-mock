@@ -16,7 +16,6 @@ interface IRouteDispatcher extends IItem
 {
     public const SUBJECT = 'extas.jira.mock.route.dispatcher';
 
-    public const FIELD__PARSED = 'parsed';
     public const FIELD__ROUTE = 'route';
 
     /**
@@ -25,11 +24,6 @@ interface IRouteDispatcher extends IItem
      * @return string
      */
     public function __invoke(IMockServer $server, RequestInterface $request): string;
-
-    /**
-     * @return array
-     */
-    public function getParsed(): array;
 
     /**
      * @return IJiraRoute

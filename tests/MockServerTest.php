@@ -58,6 +58,18 @@ class MockServerTest extends TestCase
         );
     }
 
+    public function testRoutePreparedMissed()
+    {
+        $this->createRoute('/prepared.unknown.json', RoutePrepared::class);
+        $response = $this->runServer();
+
+        $this->assertEquals(
+            'Missed prepared path with suffix "/prepared.unknown.json"',
+            (string) $response->getBody(),
+            'Response mismatched: ' . $response->getBody()
+        );
+    }
+
     public function testRouteLogJsonRequest()
     {
         $this->createRoute('/log.test.json', RouteLogJsonRequest::class);
