@@ -1,20 +1,19 @@
 <?php
-namespace extas\components\plugins;
+namespace extas\components\plugins\install;
 
 use extas\components\jira\JiraRoute;
-use extas\interfaces\jira\IJiraRouteRepository;
 
 /**
- * Class PluginInstallJiraRoute
+ * Class InstallJiraRoute
  *
- * @package extas\components\plugins
+ * @package extas\components\plugins\install
  * @author jeyroik <jeyroik@gmail.com>
  */
-class PluginInstallJiraRoute extends PluginInstallDefault
+class InstallJiraRoute extends InstallSection
 {
     protected string $selfSection = 'jira_mock_routes';
     protected string $selfName = 'jira mock route';
-    protected string $selfRepositoryClass = IJiraRouteRepository::class;
+    protected string $selfRepositoryClass = 'jiraRouteRepository';
     protected string $selfUID = JiraRoute::FIELD__NAME;
     protected string $selfItemClass = JiraRoute::class;
 }

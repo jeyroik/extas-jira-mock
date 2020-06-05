@@ -1,10 +1,7 @@
 {
   "name": "extas/jira-mock",
+  "installer_version": 3,
   "package_classes": [
-    {
-      "class": "extas\\components\\jira\\JiraRouteRepository",
-      "interface": "extas\\interfaces\\jira\\IJiraRouteRepository"
-    },
     {
       "class": "extas\\components\\jira\\JiraRouteRepository",
       "interface": "jiraRouteRepository"
@@ -12,8 +9,12 @@
   ],
   "plugins": [
     {
-      "class": "extas\\components\\plugins\\PluginInstallJiraRoute",
-      "stage": "extas.install"
+      "class": "extas\\components\\plugins\\install\\InstallJiraRoute",
+      "stage": "extas.install.section.jira_mock_routes"
+    },
+    {
+      "class": "extas\\components\\plugins\\uninstall\\UninstallJiraRoute",
+      "stage": "extas.uninstall.section.jira_mock_routes"
     },
     {
       "class": "extas\\components\\plugins\\jsonrpc\\PluginJiraMockRoutes",
@@ -25,9 +26,7 @@
       "class": "extas\\components\\extensions\\ExtensionRepositoryGet",
       "interface": "extas\\interfaces\\extensions\\IExtensionRepositoryGet",
       "subject": "*",
-      "methods": [
-        "jiraRouteRepository"
-      ]
+      "methods": ["jiraRouteRepository"]
     }
   ],
   "jira_mock_routes": [
